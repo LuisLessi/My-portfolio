@@ -16,38 +16,62 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
+
   <script src="https://use.fontawesome.com/86387f4e59.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+  <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
   <link rel="script" href="script.js">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <nav class="corSecundaria navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand textoBranco" href="#">Luís Felipe</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <div class="sticky-top" id="menu">
+    <nav class="corSecundaria navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand textoBranco" href="#">Luís Felipe</a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-      </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link textoBranco" href="#projetos">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link textoBranco" href="#sobre-mim">About me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link textoBranco" href="#qualificações">Qualifications</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link textoBranco" href="#contato">Contacts</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <!--Menu Hamburguer-->
+
+
+      <!--Teste-->
+      <div class="dropdown">
+        <button class="navbar-toggler" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-label="Toggle navigation" aria-controls="navbarSupportedContent" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#projetos">Projects</a></li>
+          <li><a class="dropdown-item" href="#sobre-mim">About me</a></li>
+          <li><a class="dropdown-item" href="#qualificações">Qualifications</a></li>
+          <li><a class="dropdown-item" href="#contato">Contacts</a></li>
+
+        </ul>
+      </div>
+      <!--Teste-->
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link textoBranco" href="#projetos">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link textoBranco" href="#sobre-mim">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link textoBranco" href="#qualificações">Qualifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link textoBranco" href="#contato">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
   <section class="jumbotron text-center corPrimaria">
     <div class="container">
       <img class="foto-perfil" src="imgs/Perfil2.jpg" alt="">
@@ -131,6 +155,37 @@
             </div>
           </div>
         </div>
+
+        <!-- Terceira img-->
+        <div class="col-md-6">
+          <div class="card mb-4 box-shadow">
+            <img class="imgSocial" src="imgs/bsucadev.png" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text">
+                Personal project with an idea similar to "GeekHunter". The idea was to study the tools that the
+                Booststrap project offers, and in the future continue with the backend in NodeJS.</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS / Bootstrap</li>
+                <li>JavaScript</li>
+                <li>VueJS/NuxtJS</li>
+              </ul>
+              <!--Aqui são as alteração dos links do botão-->
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://github.com/LuisLessi/Busca-Dev">
+                    <button type="button" class="btn btn-sm btn-outline-success">View Project
+                    </button>
+                  </a>
+                  <a href="https://github.com/LuisLessi/Busca-Dev">
+                    <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col-md-6">
           <div class="card mb-4 box-shadow">
 

@@ -18,6 +18,7 @@
     transition: opacity 0.25s;
 }
 
+
 .featured-wrapper .arrows label::before,
 .featured-wrapper .arrows label::after {
     position: absolute;
@@ -235,4 +236,16 @@ p {
 
 html {
     scroll-behavior: smooth;
+}
+
+.dropdown-menu {
+    position: absolute;
+    margin-left: -85px;
+    margin-top: 7px;
+    background-color: #2c3e50da;
+}
+
+.dropdown-item {
+    text-decoration: none;
+
 }
