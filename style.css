@@ -263,11 +263,9 @@ p {
 }
 
 .tech {
-    display: inline-block;
+    display: inline;
 
 }
-
-.tech-icons {}
 
 .textoFooter {
     margin: 0px;
@@ -283,7 +281,7 @@ html {
     position: absolute;
     margin-left: -85px;
     margin-top: 7px;
-    background-color: #2c3e50da;
+    background-color: #e2e2e2da;
 }
 
 .dropdown-item {
