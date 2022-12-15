@@ -13,6 +13,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
@@ -27,6 +28,92 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="./imgs/icon_port.png">
 </head>
+
+<!--Função de expandir imagem-->
+<script type="text/javascript">
+
+  // img1
+  $(document).ready(function(){
+    $('.lightbox').click(function(){
+      $('.backdrop, .box').animate({'opacity':'.50'}, 300, 'linear');
+      $('.box').animate({'opacity':'1.00'}, 300, 'linear')
+        $('.backdrop, .box').css('display', 'block');
+    });
+    $('.close').click(function(){
+      close_box();
+      })
+    $('.backdrop').click(function(){
+      close_box();
+    })
+})
+function close_box(){
+  $('.backdrop, .box').animate({'opacity': '0'}, 300, 'linear', function(){
+        $('.backdrop, .box').css('display', 'none')
+      })
+}
+
+//img2
+$(document).ready(function(){
+    $('.lightbox2').click(function(){
+      $('.backdrop2, .box2').animate({'opacity':'.50'}, 300, 'linear');
+      $('.box2').animate({'opacity':'1.00'}, 300, 'linear')
+        $('.backdrop2, .box2').css('display', 'block');
+    });
+    $('.close2').click(function(){
+      close_box2();
+      })
+    $('.backdrop2').click(function(){
+      close_box2();
+    })
+})
+function close_box2(){
+  $('.backdrop2, .box2').animate({'opacity': '0'}, 300, 'linear', function(){
+        $('.backdrop2, .box2').css('display', 'none')
+      })
+}
+
+//img3
+$(document).ready(function(){
+    $('.lightbox3').click(function(){
+      $('.backdrop3, .box3').animate({'opacity':'.50'}, 300, 'linear');
+      $('.box3').animate({'opacity':'1.00'}, 300, 'linear')
+        $('.backdrop3, .box3').css('display', 'block');
+    });
+    $('.close3').click(function(){
+      close_box3();
+      })
+    $('.backdrop3').click(function(){
+      close_box3();
+    })
+})
+function close_box3(){
+  $('.backdrop3, .box3').animate({'opacity': '0'}, 300, 'linear', function(){
+        $('.backdrop3, .box3').css('display', 'none')
+      })
+}
+
+
+//img4
+$(document).ready(function(){
+    $('.lightbox4').click(function(){
+      $('.backdrop4, .box4').animate({'opacity':'.50'}, 300, 'linear');
+      $('.box4').animate({'opacity':'1.00'}, 300, 'linear')
+        $('.backdrop4, .box4').css('display', 'block');
+    });
+    $('.close4').click(function(){
+      close_box4();
+      })
+    $('.backdrop4').click(function(){
+      close_box4();
+    })
+})
+function close_box4(){
+  $('.backdrop4, .box4').animate({'opacity': '0'}, 300, 'linear', function(){
+        $('.backdrop4, .box4').css('display', 'none')
+      })
+}
+
+</script>
 
 <body>
   <div class="sticky-top" id="menu">
@@ -105,16 +192,22 @@
   <div class="album py-5 bg-light " id="projetos">
     <div class="container">
       <h2 class="jumbotron-heading text-center titulosverde">projects</h2>
+      
       <div class="row">
 
+        
+
         <!-- Primeira img-->
-
+        
         <div class="col-md-6">
-          <div class="card mb-4 box-shadow">
 
-            <div class="zoom">
-              <a href="https://github.com/LuisLessi" target="_blank">
-                <img class="card-img-top" src="imgs/Site.png" data-holder-rendered="true"></a>
+        <div class="backdrop"></div>
+        <div class="box"><div class="close ">x</div><img class="card-img-top" src="imgs/Site.png" data-holder-rendered="true">
+      </div>
+
+          <div class="card mb-4 box-shadow">
+            <div class="zoom lightbox">
+                <img class="card-img-top" src="imgs/Site.png" data-holder-rendered="true">
             </div>
 
             <div class="text-item">
@@ -148,11 +241,14 @@
 
         <!-- Segunda img-->
         <div class="col-md-6">
+          <div class="backdrop2"></div>
+        <div class="box2"><div class="close2 close">x</div><img class="card-img-top" src="imgs/perfilEstudante.jpg" data-holder-rendered="true">
+      </div>
           <div class="card mb-4 box-shadow">
-            <div class="zoom">
+            <div class="zoom lightbox2">
 
-              <a href="https://github.com/LuisLessi/Social-Networking-2.0-NuxtJs-" target="_blank">
-                <img class="imgSocial" src="imgs/perfilEstudante.jpg" data-holder-rendered="true"></a>
+              
+                <img class="imgSocial" src="imgs/perfilEstudante.jpg" data-holder-rendered="true">
             </div>
             <div class="text-item">
               <h2>Social Networking</h2>
@@ -188,10 +284,12 @@
 
         <!-- Terceira img-->
         <div class="col-md-6">
+          <div class="backdrop3"></div>
+        <div class="box3"><div class="close3 close">x</div><img class="card-img-top" src="imgs/bsucadev.png" data-holder-rendered="true">
+      </div>
           <div class="card mb-4 box-shadow">
-            <div class="zoom">
-              <a href="https://github.com/LuisLessi/Busca-Dev" target="_blank">
-                <img class="imgSocial" src="imgs/bsucadev.png" data-holder-rendered="true" id='imagem'></a>
+            <div class="zoom lightbox3">
+                <img class="imgSocial" src="imgs/bsucadev.png" data-holder-rendered="true" id='imagem'>
             </div>
             <div class="text-item">
               <h2>Busca Dev</h2>
@@ -214,6 +312,47 @@
                     </button>
                   </a>
                   <a href="https://github.com/LuisLessi/Busca-Dev" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quarta img-->
+        <div class="col-md-6">
+          <div class="backdrop4"></div>
+        <div class="box4"><div class="close4 close">x</div><img class="card-img-top" src="imgs/Day_Notes.jpg" data-holder-rendered="true">
+      </div>
+          <div class="card mb-4 box-shadow">
+            <div class="zoom lightbox4">
+             
+                <img class="imgSocial" src="imgs/Day_Notes.jpg" data-holder-rendered="true" id='imagem'>
+            </div>
+            <div class="text-item">
+              <h2>Day Notes</h2>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Notepad/card project (being able to define which notes have priority and filter them) 
+                using NodeJs and ReactJs.</p>
+              <ul>
+                <li>ReactJs</li>
+                <li>NodeJs</li>
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>MongoDB</li>
+                <li>Postman</li>
+              </ul>
+              <!--Aqui são as alteração dos links do botão-->
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://github.com/LuisLessi/Day-Notes" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-success">View Project
+                    </button>
+                  </a>
+                  <a href="https://github.com/LuisLessi/Day-Notes" target="_blank">
                     <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
                   </a>
                 </div>
@@ -248,6 +387,7 @@
   <!-- Qualificações -->
   <section class="jumbotron text-center" style="background-color: white !important;" id="qualificações">
     <div class="container">
+      
       <h2 class="jumbotron-heading text-center titulosverde">
         QUALIFICATIONS
       </h2>
