@@ -33,85 +33,85 @@
 <script type="text/javascript">
 
   // img1
-  $(document).ready(function(){
-    $('.lightbox').click(function(){
-      $('.backdrop, .box').animate({'opacity':'.50'}, 300, 'linear');
-      $('.box').animate({'opacity':'1.00'}, 300, 'linear')
-        $('.backdrop, .box').css('display', 'block');
+  $(document).ready(function () {
+    $('.lightbox').click(function () {
+      $('.backdrop, .box').animate({ 'opacity': '.50' }, 300, 'linear');
+      $('.box').animate({ 'opacity': '1.00' }, 300, 'linear')
+      $('.backdrop, .box').css('display', 'block');
     });
-    $('.close').click(function(){
-      close_box();
-      })
-    $('.backdrop').click(function(){
+    $('.close').click(function () {
       close_box();
     })
-})
-function close_box(){
-  $('.backdrop, .box').animate({'opacity': '0'}, 300, 'linear', function(){
-        $('.backdrop, .box').css('display', 'none')
-      })
-}
+    $('.backdrop').click(function () {
+      close_box();
+    })
+  })
+  function close_box() {
+    $('.backdrop, .box').animate({ 'opacity': '0' }, 300, 'linear', function () {
+      $('.backdrop, .box').css('display', 'none')
+    })
+  }
 
-//img2
-$(document).ready(function(){
-    $('.lightbox2').click(function(){
-      $('.backdrop2, .box2').animate({'opacity':'.50'}, 300, 'linear');
-      $('.box2').animate({'opacity':'1.00'}, 300, 'linear')
-        $('.backdrop2, .box2').css('display', 'block');
+  //img2
+  $(document).ready(function () {
+    $('.lightbox2').click(function () {
+      $('.backdrop2, .box2').animate({ 'opacity': '.50' }, 300, 'linear');
+      $('.box2').animate({ 'opacity': '1.00' }, 300, 'linear')
+      $('.backdrop2, .box2').css('display', 'block');
     });
-    $('.close2').click(function(){
+    $('.close2').click(function () {
       close_box2();
-      })
-    $('.backdrop2').click(function(){
+    })
+    $('.backdrop2').click(function () {
       close_box2();
     })
-})
-function close_box2(){
-  $('.backdrop2, .box2').animate({'opacity': '0'}, 300, 'linear', function(){
-        $('.backdrop2, .box2').css('display', 'none')
-      })
-}
+  })
+  function close_box2() {
+    $('.backdrop2, .box2').animate({ 'opacity': '0' }, 300, 'linear', function () {
+      $('.backdrop2, .box2').css('display', 'none')
+    })
+  }
 
-//img3
-$(document).ready(function(){
-    $('.lightbox3').click(function(){
-      $('.backdrop3, .box3').animate({'opacity':'.50'}, 300, 'linear');
-      $('.box3').animate({'opacity':'1.00'}, 300, 'linear')
-        $('.backdrop3, .box3').css('display', 'block');
+  //img3
+  $(document).ready(function () {
+    $('.lightbox3').click(function () {
+      $('.backdrop3, .box3').animate({ 'opacity': '.50' }, 300, 'linear');
+      $('.box3').animate({ 'opacity': '1.00' }, 300, 'linear')
+      $('.backdrop3, .box3').css('display', 'block');
     });
-    $('.close3').click(function(){
-      close_box3();
-      })
-    $('.backdrop3').click(function(){
+    $('.close3').click(function () {
       close_box3();
     })
-})
-function close_box3(){
-  $('.backdrop3, .box3').animate({'opacity': '0'}, 300, 'linear', function(){
-        $('.backdrop3, .box3').css('display', 'none')
-      })
-}
+    $('.backdrop3').click(function () {
+      close_box3();
+    })
+  })
+  function close_box3() {
+    $('.backdrop3, .box3').animate({ 'opacity': '0' }, 300, 'linear', function () {
+      $('.backdrop3, .box3').css('display', 'none')
+    })
+  }
 
 
-//img4
-$(document).ready(function(){
-    $('.lightbox4').click(function(){
-      $('.backdrop4, .box4').animate({'opacity':'.50'}, 300, 'linear');
-      $('.box4').animate({'opacity':'1.00'}, 300, 'linear')
-        $('.backdrop4, .box4').css('display', 'block');
+  //img4
+  $(document).ready(function () {
+    $('.lightbox4').click(function () {
+      $('.backdrop4, .box4').animate({ 'opacity': '.50' }, 300, 'linear');
+      $('.box4').animate({ 'opacity': '1.00' }, 300, 'linear')
+      $('.backdrop4, .box4').css('display', 'block');
     });
-    $('.close4').click(function(){
-      close_box4();
-      })
-    $('.backdrop4').click(function(){
+    $('.close4').click(function () {
       close_box4();
     })
-})
-function close_box4(){
-  $('.backdrop4, .box4').animate({'opacity': '0'}, 300, 'linear', function(){
-        $('.backdrop4, .box4').css('display', 'none')
-      })
-}
+    $('.backdrop4').click(function () {
+      close_box4();
+    })
+  })
+  function close_box4() {
+    $('.backdrop4, .box4').animate({ 'opacity': '0' }, 300, 'linear', function () {
+      $('.backdrop4, .box4').css('display', 'none')
+    })
+  }
 
 </script>
 
@@ -193,20 +193,21 @@ function close_box4(){
     <div class="container">
       <h2 class="jumbotron-heading text-center titulosverde">projects</h2>
       <h6 class="jumbotron-heading text-center ">⚠️ The sites available
-         for viewing the projects are in their free hosting mode (only with the build
-          folder deployed)</h6><br>
+        for viewing the projects are in their free hosting mode (only with the build
+        folder deployed)</h6><br>
 
       <div class="row">
 
-        
+
 
         <!-- Primeira img-->
-        
+
         <div class="col-md-6">
 
-        <div class="backdrop"></div>
-        <div class="box"><div class="close ">x</div><img class="card-img-top" src="imgs/Site.png" data-holder-rendered="true">
-      </div>
+          <div class="backdrop"></div>
+          <div class="box">
+            <div class="close ">x</div><img class="card-img-top" src="imgs/Site.png" data-holder-rendered="true">
+          </div>
 
           <div class="card mb-4 box-shadow">
             <div class="zoom lightbox">
@@ -231,7 +232,7 @@ function close_box4(){
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <a href="https://github.com/LuisLessi" target="_blank">
-                    <button type="button" class="btn btn-sm btn-outline-success" disabled >View Project
+                    <button type="button" class="btn btn-sm btn-outline-success" disabled>View Project
                     </button>
                   </a>
                   <a href="https://github.com/LuisLessi" target="_blank">
@@ -246,12 +247,14 @@ function close_box4(){
         <!-- Segunda img-->
         <div class="col-md-6">
           <div class="backdrop2"></div>
-        <div class="box2"><div class="close2 close">x</div><img class="card-img-top" src="imgs/perfilEstudante.jpg" data-holder-rendered="true">
-      </div>
+          <div class="box2">
+            <div class="close2 close">x</div><img class="card-img-top" src="imgs/perfilEstudante.jpg"
+              data-holder-rendered="true">
+          </div>
           <div class="card mb-4 box-shadow">
             <div class="zoom lightbox2">
 
-              <a href="https://social-networking-project.netlify.app" target="_blank" >
+              <a href="https://social-networking-project.netlify.app" target="_blank">
                 <img class="imgSocial" src="imgs/perfilEstudante.jpg" data-holder-rendered="true"></a>
             </div>
             <div class="text-item">
@@ -289,11 +292,13 @@ function close_box4(){
         <!-- Terceira img-->
         <div class="col-md-6">
           <div class="backdrop3"></div>
-        <div class="box3"><div class="close3 close">x</div><img class="card-img-top" src="imgs/bsucadev.png" data-holder-rendered="true">
-      </div>
+          <div class="box3">
+            <div class="close3 close">x</div><img class="card-img-top" src="imgs/bsucadev.png"
+              data-holder-rendered="true">
+          </div>
           <div class="card mb-4 box-shadow">
             <div class="zoom lightbox3">
-              <a href="https://busca-dev.netlify.app" target="_blank" >
+              <a href="https://busca-dev.netlify.app" target="_blank">
                 <img class="imgSocial" src="imgs/bsucadev.png" data-holder-rendered="true" id='imagem'></a>
             </div>
             <div class="text-item">
@@ -328,11 +333,13 @@ function close_box4(){
         <!-- Quarta img-->
         <div class="col-md-6">
           <div class="backdrop4"></div>
-        <div class="box4"><div class="close4 close">x</div><img class="card-img-top" src="imgs/Day_Notes.jpg" data-holder-rendered="true">
-      </div>
+          <div class="box4">
+            <div class="close4 close">x</div><img class="card-img-top" src="imgs/Day_Notes.jpg"
+              data-holder-rendered="true">
+          </div>
           <div class="card mb-4 box-shadow">
             <div class="zoom lightbox4">
-             <a href="https://day-note-project.netlify.app/" target="_blank">
+              <a href="https://day-note-project.netlify.app/" target="_blank">
                 <img class="imgSocial" src="imgs/Day_Notes.jpg" data-holder-rendered="true" id='imagem'></a>
             </div>
             <div class="text-item">
@@ -340,7 +347,7 @@ function close_box4(){
             </div>
             <div class="card-body">
               <p class="card-text">
-                Notepad/card project (being able to define which notes have priority and filter them) 
+                Notepad/card project (being able to define which notes have priority and filter them)
                 using NodeJs and ReactJs.</p>
               <ul>
                 <li>ReactJs</li>
@@ -366,124 +373,175 @@ function close_box4(){
           </div>
         </div>
 
-<!-- Quinta img-->
-<div class="col-md-6">
-  <div class="backdrop3"></div>
-<div class="box3"><div class="close3 close">x</div><img class="card-img-top" src="imgs/dreadsShauni.png" data-holder-rendered="true">
-</div>
-  <div class="card mb-4 box-shadow">
-    <div class="zoom lightbox3">
-      <a href="https://shauni-dreadmaker.netlify.app/" target="_blank" >
-        <img class="imgSocial" src="imgs/dreadsShauni.png" data-holder-rendered="true" id='imagem'></a>
-    </div>
-    <div class="text-item">
-      <h2>Dreads da Shauní</h2>
-    </div>
-    <div class="card-body">
-      <p class="card-text">
-        Portfolio site created for Carolina dreadmaker to present her already provided services.
-        Project created for a better study of ReactJs and its tools</p>
-      <ul>
-        <li>ReactJs</li>
-        <li>CSS / Bootstrap</li>
-        <li>JavaScript</li>
-      </ul>
-      <!--Aqui são as alteração dos links do botão-->
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="btn-group">
-          <a href="shauni-dreadmaker.netlify.app" target="_blank">
-            <button type="button" class="btn btn-sm btn-outline-success">View Project
-            </button>
-          </a>
-          <a href="https://github.com/LuisLessi/Shauni_Dreadmaker" target="_blank">
-            <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-          </a>
+        <!-- Quinta img-->
+        <div class="col-md-6">
+          <div class="backdrop3"></div>
+          <div class="box3">
+            <div class="close3 close">x</div><img class="card-img-top" src="imgs/dreadsShauni.png"
+              data-holder-rendered="true">
+          </div>
+          <div class="card mb-4 box-shadow">
+            <div class="zoom lightbox3">
+              <a href="https://shauni-dreadmaker.netlify.app/" target="_blank">
+                <img class="imgSocial" src="imgs/dreadsShauni.png" data-holder-rendered="true" id='imagem'></a>
+            </div>
+            <div class="text-item">
+              <h2>Dreads da Shauní</h2>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Portfolio site created for Carolina dreadmaker to present her already provided services.
+                Project created for a better study of ReactJs and its tools</p>
+              <ul>
+                <li>ReactJs</li>
+                <li>CSS / Bootstrap</li>
+                <li>JavaScript</li>
+              </ul>
+              <!--Aqui são as alteração dos links do botão-->
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="shauni-dreadmaker.netlify.app" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-success">View Project
+                    </button>
+                  </a>
+                  <a href="https://github.com/LuisLessi/Shauni_Dreadmaker" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Sexta img-->
-<div class="col-md-6">
-  <div class="backdrop3"></div>
-<div class="box3"><div class="close3 close">x</div><img class="card-img-top" src="imgs/dreadsShauni.png" data-holder-rendered="true">
-</div>
-  <div class="card mb-4 box-shadow">
-    <div class="zoom lightbox3">
-      <a href="https://github.com/LuisLessi/Blog-App" target="_blank" >
-        <img class="imgSocial" src="imgs/blog_stacks.png" data-holder-rendered="true" id='imagem'></a>
-    </div>
-    <div class="text-item">
-      <h2>Blog stacks</h2>
-    </div>
-    <div class="card-body">
-      <p class="card-text">
-        Blog which gathers posts published by users and separated by their appropriate categories (in which categories can only be created or removed if the user is an admin).
-</p>
-      <ul>
-        <li>Handlebars</li>
-        <li>CSS / Bootstrap</li>
-        <li>NodeJs</li>
-        <li>MongoDB/MySQL</li>
-      </ul>
-      <!--Aqui são as alteração dos links do botão-->
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="btn-group">
-          <a href="" target="_blank">
-            <button type="button" class="btn btn-sm btn-outline-success" disabled>View Project
-            </button>
-          </a>
-          <a href="https://github.com/LuisLessi/Blog-App" target="_blank">
-            <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-          </a>
+        <!-- Sexta img-->
+        <div class="col-md-6">
+          <div class="backdrop3"></div>
+          <div class="box3">
+            <div class="close3 close">x</div><img class="card-img-top" src="imgs/dreadsShauni.png"
+              data-holder-rendered="true">
+          </div>
+          <div class="card mb-4 box-shadow">
+            <div class="zoom lightbox3">
+              <a href="https://github.com/LuisLessi/Blog-App" target="_blank">
+                <img class="imgSocial" src="imgs/blog_stacks.png" data-holder-rendered="true" id='imagem'></a>
+            </div>
+            <div class="text-item">
+              <h2>Blog stacks</h2>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Blog which gathers posts published by users and separated by their appropriate categories (in which
+                categories can only be created or removed if the user is an admin).
+              </p>
+              <ul>
+                <li>Handlebars</li>
+                <li>CSS / Bootstrap</li>
+                <li>NodeJs</li>
+                <li>MongoDB/MySQL</li>
+              </ul>
+              <!--Aqui são as alteração dos links do botão-->
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-success" disabled>View Project
+                    </button>
+                  </a>
+                  <a href="https://github.com/LuisLessi/Blog-App" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Sétima img-->
-<div class="col-md-6">
-  <div class="backdrop3"></div>
-<div class="box3"><div class="close3 close">x</div><img class="card-img-top" src="imgs/leiloes_start.png" data-holder-rendered="true">
-</div>
-  <div class="card mb-4 box-shadow">
-    <div class="zoom lightbox3">
-      <a href="https://leiloes-start.herokuapp.com/" target="_blank" >
-        <img class="imgSocial" src="imgs/leiloes_start.png" data-holder-rendered="true" id='imagem'></a>
-    </div>
-    <div class="text-item">
-      <h2>Leilões Start</h2>
-    </div>
-    <div class="card-body">
-      <p class="card-text">
-        This project was carried out as a technical test of the selection process for employment at
-        the company Dix Digital, with the objective of creating an auction site containing login and
-        registration authorization, live auctions, scheduled auctions and the scheduling of new auctions
-        (if the user is PJ)
-      </p>
-      <ul>
-        <li>VueJs</li>
-        <li>CSS / Bootstrap</li>
-        <li>JavaScript</li>
-        <li>Firebase</li>
-      </ul>
-      <!--Aqui são as alteração dos links do botão-->
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="btn-group">
-          <a href="https://leiloes-start.herokuapp.com/" target="_blank">
-            <button type="button" class="btn btn-sm btn-outline-success">View Project
-            </button>
-          </a>
-          <a href="https://github.com/LuisLessi/Site-Leilao" target="_blank">
-            <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-          </a>
+        <!-- Sétima img-->
+        <div class="col-md-6">
+          <div class="backdrop3"></div>
+          <div class="box3">
+            <div class="close3 close">x</div><img class="card-img-top" src="imgs/leiloes_start.png"
+              data-holder-rendered="true">
+          </div>
+          <div class="card mb-4 box-shadow">
+            <div class="zoom lightbox3">
+              <a href="https://leiloes-start.herokuapp.com/" target="_blank">
+                <img class="imgSocial" src="imgs/leiloes_start.png" data-holder-rendered="true" id='imagem'></a>
+            </div>
+            <div class="text-item">
+              <h2>Leilões Start</h2>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                This project was carried out as a technical test of the selection process for employment at
+                the company Dix Digital, with the objective of creating an auction site containing login and
+                registration authorization, live auctions, scheduled auctions and the scheduling of new auctions
+                (if the user is PJ)
+              </p>
+              <ul>
+                <li>VueJs</li>
+                <li>CSS / Bootstrap</li>
+                <li>JavaScript</li>
+                <li>Firebase</li>
+              </ul>
+              <!--Aqui são as alteração dos links do botão-->
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://leiloes-start.herokuapp.com/" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-success">View Project
+                    </button>
+                  </a>
+                  <a href="https://github.com/LuisLessi/Site-Leilao" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+        <!-- Oitava img-->
+        <div class="col-md-6">
+          <div class="backdrop3"></div>
+          <div class="box3">
+            <div class="close3 close">x</div><img class="card-img-top" src="imgs/leiloes_start.png"
+              data-holder-rendered="true">
+          </div>
+          <div class="card mb-4 box-shadow">
+            <div class="zoom lightbox3">
+              <a href="https://camargo-agronegocios.herokuapp.com/" target="_blank">
+                <img class="imgSocial" src="imgs/camargo-agronegocios.png" data-holder-rendered="true" id='imagem'></a>
+            </div>
+            <div class="text-item">
+              <h2>Camargo Agronegocios</h2>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Second technical test by Dix Digital in which I use as a prototype the layout created in Figma by the
+                company
+                (https://www.figma.com/file/2LNgrjmv6Y75uGkArtBuo8/Camargo?node-id=4%3A1361&t=reyDsYAExTUkOyLT-0).
+
+              </p>
+              <ul>
+                <li>VueJs</li>
+                <li>CSS / Bootstrap</li>
+                <li>Express</li>
+                <li>Heroku</li>
+              </ul>
+              <!--Aqui são as alteração dos links do botão-->
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://camargo-agronegocios.herokuapp.com/" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-success">View Project
+                    </button>
+                  </a>
+                  <a href="https://github.com/LuisLessi/Camargo-Agronegocios" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="col-md-6">
           <div class="card mb-4 box-shadow">
@@ -511,7 +569,7 @@ function close_box4(){
   <!-- Qualificações -->
   <section class="jumbotron text-center" style="background-color: white !important;" id="qualificações">
     <div class="container">
-      
+
       <h2 class="jumbotron-heading text-center titulosverde">
         QUALIFICATIONS
       </h2>
