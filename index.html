@@ -29,90 +29,18 @@
   <link rel="icon" href="./imgs/icon_port.png">
 </head>
 
-<!--Função de expandir imagem-->
-<script type="text/javascript">
 
-  // img1
-  $(document).ready(function () {
-    $('.lightbox').click(function () {
-      $('.backdrop, .box').animate({ 'opacity': '.50' }, 300, 'linear');
-      $('.box').animate({ 'opacity': '1.00' }, 300, 'linear')
-      $('.backdrop, .box').css('display', 'block');
-    });
-    $('.close').click(function () {
-      close_box();
-    })
-    $('.backdrop').click(function () {
-      close_box();
-    })
-  })
-  function close_box() {
-    $('.backdrop, .box').animate({ 'opacity': '0' }, 300, 'linear', function () {
-      $('.backdrop, .box').css('display', 'none')
-    })
-  }
-
-  //img2
-  $(document).ready(function () {
-    $('.lightbox2').click(function () {
-      $('.backdrop2, .box2').animate({ 'opacity': '.50' }, 300, 'linear');
-      $('.box2').animate({ 'opacity': '1.00' }, 300, 'linear')
-      $('.backdrop2, .box2').css('display', 'block');
-    });
-    $('.close2').click(function () {
-      close_box2();
-    })
-    $('.backdrop2').click(function () {
-      close_box2();
-    })
-  })
-  function close_box2() {
-    $('.backdrop2, .box2').animate({ 'opacity': '0' }, 300, 'linear', function () {
-      $('.backdrop2, .box2').css('display', 'none')
-    })
-  }
-
-  //img3
-  $(document).ready(function () {
-    $('.lightbox3').click(function () {
-      $('.backdrop3, .box3').animate({ 'opacity': '.50' }, 300, 'linear');
-      $('.box3').animate({ 'opacity': '1.00' }, 300, 'linear')
-      $('.backdrop3, .box3').css('display', 'block');
-    });
-    $('.close3').click(function () {
-      close_box3();
-    })
-    $('.backdrop3').click(function () {
-      close_box3();
-    })
-  })
-  function close_box3() {
-    $('.backdrop3, .box3').animate({ 'opacity': '0' }, 300, 'linear', function () {
-      $('.backdrop3, .box3').css('display', 'none')
-    })
-  }
-
-
-  //img4
-  $(document).ready(function () {
-    $('.lightbox4').click(function () {
-      $('.backdrop4, .box4').animate({ 'opacity': '.50' }, 300, 'linear');
-      $('.box4').animate({ 'opacity': '1.00' }, 300, 'linear')
-      $('.backdrop4, .box4').css('display', 'block');
-    });
-    $('.close4').click(function () {
-      close_box4();
-    })
-    $('.backdrop4').click(function () {
-      close_box4();
-    })
-  })
-  function close_box4() {
-    $('.backdrop4, .box4').animate({ 'opacity': '0' }, 300, 'linear', function () {
-      $('.backdrop4, .box4').css('display', 'none')
-    })
-  }
-
+<script>
+  window.addEventListener('scroll', function () {
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    const target = document.querySelector('.my-element');
+    target.style.display = 'none';
+    if (scrollPosition < 1100) {
+      target.style.display = 'none';
+    } else {
+      target.style.display = 'block';
+    }
+  });
 </script>
 
 <body>
@@ -162,6 +90,11 @@
       </div>
     </nav>
 
+
+    <!--Hook Top-->
+    <a class="w-toplink pos_right  my-element active" href="#" title="Voltar ao Topo"><span>▲</span></a>
+    <!---->
+
   </div>
   <section class="jumbotron text-center codeBack">
     <div class="container ">
@@ -195,14 +128,47 @@
 
       <div class="row">
 
-
         <!-- Primeira img-->
         <div class="col-md-6">
-          <div class="backdrop3"></div>
-          <div class="box3">
-            <div class="close3 close">x</div><img class="card-img-top" src="imgs/leiloes_start.png"
-              data-holder-rendered="true">
+
+          <div class="card mb-4 box-shadow">
+            <div class="zoom lightbox3">
+              <a href="https://cris-net.herokuapp.com/" target="_blank">
+                <img class="imgSocial" src="imgs/cris-net.png" data-holder-rendered="true" id='imagem'></a>
+            </div>
+            <div class="text-item">
+              <h2>Cris Net</h2>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Website I made for the company I currently work for, to replace the other website that had an outdated
+                look and no responsiveness.
+
+              </p>
+              <ul>
+                <li>VueJs</li>
+                <li>CSS / Bootstrap</li>
+                <li>Heroku</li>
+              </ul>
+              <!--Aqui são as alteração dos links do botão-->
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://cris-net.herokuapp.com/" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-success">View Project
+                    </button>
+                  </a>
+                  <a hrePf="https://github.com/LuisLessi/Cris-Net-Site" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <!-- Segunda img-->
+        <div class="col-md-6">
+
           <div class="card mb-4 box-shadow">
             <div class="zoom lightbox3">
               <a href="https://camargo-agronegocios.herokuapp.com/" target="_blank">
@@ -242,11 +208,7 @@
 
         <!-- Segunda img-->
         <div class="col-md-6">
-          <div class="backdrop3"></div>
-          <div class="box3">
-            <div class="close3 close">x</div><img class="card-img-top" src="imgs/dreadsShauni.png"
-              data-holder-rendered="true">
-          </div>
+
           <div class="card mb-4 box-shadow">
             <div class="zoom lightbox3">
               <a href="https://shauni-dreadmaker.netlify.app/" target="_blank">
@@ -283,11 +245,7 @@
 
         <!-- Terceira img-->
         <div class="col-md-6">
-          <div class="backdrop3"></div>
-          <div class="box3">
-            <div class="close3 close">x</div><img class="card-img-top" src="imgs/leiloes_start.png"
-              data-holder-rendered="true">
-          </div>
+
           <div class="card mb-4 box-shadow">
             <div class="zoom lightbox3">
               <a href="https://leiloes-start.herokuapp.com/" target="_blank">
@@ -328,11 +286,7 @@
 
         <!-- Quarta img-->
         <div class="col-md-6">
-          <div class="backdrop3"></div>
-          <div class="box3">
-            <div class="close3 close">x</div><img class="card-img-top" src="imgs/leiloes_start.png"
-              data-holder-rendered="true">
-          </div>
+
           <div class="card mb-4 box-shadow">
             <div class="zoom lightbox3">
               <a href="https://quiz-vue3.netlify.app/#/" target="_blank">
@@ -413,11 +367,7 @@
 
         <!-- sexta img-->
         <div class="col-md-6">
-          <div class="backdrop2"></div>
-          <div class="box2">
-            <div class="close2 close">x</div><img class="card-img-top" src="imgs/perfilEstudante.jpg"
-              data-holder-rendered="true">
-          </div>
+
           <div class="card mb-4 box-shadow">
             <div class="zoom lightbox2">
 
@@ -458,11 +408,7 @@
 
         <!-- Sétima img-->
         <div class="col-md-6">
-          <div class="backdrop3"></div>
-          <div class="box3">
-            <div class="close3 close">x</div><img class="card-img-top" src="imgs/bsucadev.png"
-              data-holder-rendered="true">
-          </div>
+
           <div class="card mb-4 box-shadow">
             <div class="zoom lightbox3">
               <a href="https://busca-dev.netlify.app" target="_blank">
@@ -499,11 +445,7 @@
 
         <!-- Oitava img-->
         <div class="col-md-6">
-          <div class="backdrop4"></div>
-          <div class="box4">
-            <div class="close4 close">x</div><img class="card-img-top" src="imgs/Day_Notes.jpg"
-              data-holder-rendered="true">
-          </div>
+
           <div class="card mb-4 box-shadow">
             <div class="zoom lightbox4">
               <a href="https://day-note-project.netlify.app/" target="_blank">
@@ -543,11 +485,7 @@
 
         <!-- Nona img-->
         <div class="col-md-6">
-          <div class="backdrop3"></div>
-          <div class="box3">
-            <div class="close3 close">x</div><img class="card-img-top" src="imgs/dreadsShauni.png"
-              data-holder-rendered="true">
-          </div>
+
           <div class="card mb-4 box-shadow">
             <div class="zoom lightbox3">
               <a href="https://github.com/LuisLessi/Blog-App" target="_blank">
