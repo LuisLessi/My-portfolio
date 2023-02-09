@@ -427,7 +427,10 @@ p {
         }
 }
 
+.btn:hover{
+    cursor: pointer;
 
+}
 
 .zoom {
     overflow: hidden;

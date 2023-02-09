@@ -27,6 +27,7 @@
   <link rel="script" href="script.js">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="whats_icon.css">
+  <link rel="stylesheet" href="button_more.css">
   <link rel="icon" href="./imgs/icon_port.png">
 </head>
 
@@ -106,14 +107,12 @@
         Luís</h1>
       <p class="lead textoBranco">Web developer with heuristics in UX/UI designer using VUEJS. ADS student</p>
       <p>
-        <a href="#contato" class="btn btn-dark my-2">My contacts
-        </a>
         <a href="https://github.com/LuisLessi/My-portfolio/files/10133642/Curriculo_Luis.pdf"
-          class="btn btn-dark my-2">My Curriculum
+          class="btn btn-dark my-2">Download Curriculum
         </a>
       </p>
-      <a href="https://www.linkedin.com/in/lu%C3%ADs-felipe-lessi-silva-9496aa1a1/" class="textoBranco"
-        target="_blank">Linkedin</a><img class="linkedin" src="imgs/linkedin icon.png" alt="linkedin">
+      <a href="https://www.linkedin.com/in/luislessi/" class="textoBranco" target="_blank">Linkedin</a><img
+        class="linkedin" src="imgs/linkedin icon.png" alt="linkedin">
       <a href="https://github.com/LuisLessi" class="textoBranco" target="_blank">GitHub</a><img class="linkedin"
         src="imgs/github.png" alt="linkedin">
       <a href="https://www.facebook.com/profile.php?id=100003800290059" class="textoBranco"
@@ -367,172 +366,226 @@
           </div>
         </div>
 
-        <!-- sexta img-->
-        <div class="col-md-6">
+        <!-- Button read more -->
+        <input type="checkbox" id="check">
+        <label for="check" class="btn btn-info more_button">More Projects
+          <br>🢃
+        </label>
+        <!---->
 
-          <div class="card mb-4 box-shadow">
-            <div class="zoom lightbox2">
+        <div class="row more_img">
 
-              <a href="https://social-networking-project.netlify.app" target="_blank">
-                <img class="imgSocial" src="imgs/perfilEstudante.jpg" data-holder-rendered="true"></a>
-            </div>
-            <div class="text-item">
-              <h2>Social Networking</h2>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                Software engineering lab class project (Working with the Postman API, NodeJs on the Back and Nuxt/Vue on
-                the front). Project inspired by a social network similar to Linkedin's role in uniting students and
-                companies in one place.</p>
-              <ul>
-                <li>HTML</li>
-                <li>CSS / Bootstrap</li>
-                <li>JavaScript</li>
-                <li>NodeJs</li>
-                <li>VueJS/NuxtJS</li>
-                <li>Postman</li>
-              </ul>
-              <!--Aqui são as alteração dos links do botão-->
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://social-networking-project.netlify.app" target="_blank">
-                    <button type="button" class="btn btn-sm btn-outline-success">View Project
-                    </button>
-                  </a>
-                  <a href="https://github.com/LuisLessi/Social-Networking-2.0-NuxtJs-" target="_blank">
-                    <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                  </a>
+          <!-- sexta img-->
+          <div class="col-md-6">
+
+            <div class="card mb-4 box-shadow">
+              <div class="zoom lightbox2">
+
+                <a href="https://social-networking-project.netlify.app" target="_blank">
+                  <img class="imgSocial" src="imgs/dashboard_api.png" data-holder-rendered="true"></a>
+              </div>
+              <div class="text-item">
+                <h2>Dashboard API</h2>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Dashboard app using vue 3 with axios, communicating with a Laravel server on the backend. Application
+                  for studying REST API.</p>
+                <ul>
+                  <li>VUE 3</li>
+                  <li>SCSS / Bootstrap</li>
+                  <li>HTML</li>
+                  <li>Laravel</li>
+                  <li>PHP</li>
+                  <li>Postman</li>
+                </ul>
+                <!--Aqui são as alteração dos links do botão-->
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="dashboard-api.netlify.app" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-success">View Project
+                      </button>
+                    </a>
+                    <a href="https://github.com/LuisLessi/Dashbord-API" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Sétima img-->
-        <div class="col-md-6">
+          <!-- Sétima img-->
+          <div class="col-md-6">
 
-          <div class="card mb-4 box-shadow">
-            <div class="zoom lightbox3">
-              <a href="https://busca-dev.netlify.app" target="_blank">
-                <img class="imgSocial" src="imgs/bsucadev.png" data-holder-rendered="true" id='imagem'></a>
-            </div>
-            <div class="text-item">
-              <h2>Busca Dev</h2>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                Personal project with an idea similar to "GeekHunter". The idea was to study the tools that the
-                Booststrap project offers, and in the future continue with the backend in NodeJS.</p>
-              <ul>
-                <li>HTML</li>
-                <li>CSS / Bootstrap</li>
-                <li>JavaScript</li>
-                <li>VueJS/NuxtJS</li>
-              </ul>
-              <!--Aqui são as alteração dos links do botão-->
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://busca-dev.netlify.app" target="_blank">
-                    <button type="button" class="btn btn-sm btn-outline-success">View Project
-                    </button>
-                  </a>
-                  <a href="https://github.com/LuisLessi/Busca-Dev" target="_blank">
-                    <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                  </a>
+            <div class="card mb-4 box-shadow">
+              <div class="zoom lightbox2">
+
+                <a href="https://social-networking-project.netlify.app" target="_blank">
+                  <img class="imgSocial" src="imgs/perfilEstudante.jpg" data-holder-rendered="true"></a>
+              </div>
+              <div class="text-item">
+                <h2>Social Networking</h2>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Software engineering lab class project (Working with the Postman API, NodeJs on the Back and Nuxt/Vue
+                  on
+                  the front). Project inspired by a social network similar to Linkedin's role in uniting students and
+                  companies in one place.</p>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS / Bootstrap</li>
+                  <li>JavaScript</li>
+                  <li>NodeJs</li>
+                  <li>VueJS/NuxtJS</li>
+                  <li>Postman</li>
+                </ul>
+                <!--Aqui são as alteração dos links do botão-->
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://social-networking-project.netlify.app" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-success">View Project
+                      </button>
+                    </a>
+                    <a href="https://github.com/LuisLessi/Social-Networking-2.0-NuxtJs-" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Oitava img-->
-        <div class="col-md-6">
+          <!-- Oitava img-->
+          <div class="col-md-6">
 
-          <div class="card mb-4 box-shadow">
-            <div class="zoom lightbox4">
-              <a href="https://day-note-project.netlify.app/" target="_blank">
-                <img class="imgSocial" src="imgs/Day_Notes.jpg" data-holder-rendered="true" id='imagem'></a>
-            </div>
-            <div class="text-item">
-              <h2>Day Notes</h2>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                Notepad/card project (being able to define which notes have priority and filter them)
-                using NodeJs and ReactJs.</p>
-              <ul>
-                <li>ReactJs</li>
-                <li>NodeJs</li>
-                <li>JavaScript</li>
-                <li>CSS</li>
-                <li>MongoDB</li>
-                <li>Postman</li>
-              </ul>
-              <!--Aqui são as alteração dos links do botão-->
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://day-note-project.netlify.app/" target="_blank">
-                    <button type="button" class="btn btn-sm btn-outline-success">View Project
-                    </button>
-                  </a>
-                  <a href="https://github.com/LuisLessi/Day-Notes" target="_blank">
-                    <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                  </a>
+            <div class="card mb-4 box-shadow">
+              <div class="zoom lightbox3">
+                <a href="https://busca-dev.netlify.app" target="_blank">
+                  <img class="imgSocial" src="imgs/bsucadev.png" data-holder-rendered="true" id='imagem'></a>
+              </div>
+              <div class="text-item">
+                <h2>Busca Dev</h2>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Personal project with an idea similar to "GeekHunter". The idea was to study the tools that the
+                  Booststrap project offers, and in the future continue with the backend in NodeJS.</p>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS / Bootstrap</li>
+                  <li>JavaScript</li>
+                  <li>VueJS/NuxtJS</li>
+                </ul>
+                <!--Aqui são as alteração dos links do botão-->
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://busca-dev.netlify.app" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-success">View Project
+                      </button>
+                    </a>
+                    <a href="https://github.com/LuisLessi/Busca-Dev" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
+          <!-- Nona img-->
+          <div class="col-md-6">
 
-        <!-- Nona img-->
-        <div class="col-md-6">
-
-          <div class="card mb-4 box-shadow">
-            <div class="zoom lightbox3">
-              <a href="https://github.com/LuisLessi/Blog-App" target="_blank">
-                <img class="imgSocial" src="imgs/blog_stacks.png" data-holder-rendered="true" id='imagem'></a>
-            </div>
-            <div class="text-item">
-              <h2>Blog stacks</h2>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                Blog which gathers posts published by users and separated by their appropriate categories (in which
-                categories can only be created or removed if the user is an admin).
-              </p>
-              <ul>
-                <li>Handlebars</li>
-                <li>CSS / Bootstrap</li>
-                <li>NodeJs</li>
-                <li>MongoDB/MySQL</li>
-              </ul>
-              <!--Aqui são as alteração dos links do botão-->
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="" target="_blank">
-                    <button type="button" class="btn btn-sm btn-outline-success" disabled>View Project
-                    </button>
-                  </a>
-                  <a href="https://github.com/LuisLessi/Blog-App" target="_blank">
-                    <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                  </a>
+            <div class="card mb-4 box-shadow">
+              <div class="zoom lightbox4">
+                <a href="https://day-note-project.netlify.app/" target="_blank">
+                  <img class="imgSocial" src="imgs/Day_Notes.jpg" data-holder-rendered="true" id='imagem'></a>
+              </div>
+              <div class="text-item">
+                <h2>Day Notes</h2>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Notepad/card project (being able to define which notes have priority and filter them)
+                  using NodeJs and ReactJs.</p>
+                <ul>
+                  <li>ReactJs</li>
+                  <li>NodeJs</li>
+                  <li>JavaScript</li>
+                  <li>CSS</li>
+                  <li>MongoDB</li>
+                  <li>Postman</li>
+                </ul>
+                <!--Aqui são as alteração dos links do botão-->
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://day-note-project.netlify.app/" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-success">View Project
+                      </button>
+                    </a>
+                    <a href="https://github.com/LuisLessi/Day-Notes" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
 
-        <div class="col-md-6">
-          <div class="card mb-4 box-shadow">
+          <!-- Décima img-->
+          <div class="col-md-6">
 
+            <div class="card mb-4 box-shadow">
+              <div class="zoom lightbox3">
+                <a href="https://github.com/LuisLessi/Blog-App" target="_blank">
+                  <img class="imgSocial" src="imgs/blog_stacks.png" data-holder-rendered="true" id='imagem'></a>
+              </div>
+              <div class="text-item">
+                <h2>Blog stacks</h2>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Blog which gathers posts published by users and separated by their appropriate categories (in which
+                  categories can only be created or removed if the user is an admin).
+                </p>
+                <ul>
+                  <li>Handlebars</li>
+                  <li>CSS / Bootstrap</li>
+                  <li>NodeJs</li>
+                  <li>MongoDB/MySQL</li>
+                </ul>
+                <!--Aqui são as alteração dos links do botão-->
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-success" disabled>View Project
+                      </button>
+                    </a>
+                    <a href="https://github.com/LuisLessi/Blog-App" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
+
+          <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+
+            </div>
+          </div>
+
         </div>
 
       </div>
 
     </div>
+
+  </div>
   </div>
 
   <!-- Sobre Mim-->
@@ -649,11 +702,11 @@
 
     <!--Whatsapp icon-->
     <a href="//wa.me/5516997929960?text= Olá Luís tudo bem ? vi seu portfólio e estou interessado nos seus serviços, podemos conversar ?"
-    target="_blank" class="btn btn-maincolor2">
-  <img src="./imgs/whatsapp-icon.png" class="whats-link" alt="">
-  </a>
-  <!---->
-</footer>
+      target="_blank" class="btn btn-maincolor2">
+      <img src="./imgs/whatsapp-icon.png" class="whats-link" alt="">
+    </a>
+    <!---->
+  </footer>
 
 </body>
 
