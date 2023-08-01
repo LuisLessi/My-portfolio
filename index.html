@@ -7,16 +7,21 @@
   <title>Luís portfolio</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://use.fontawesome.com/86387f4e59.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
   <script src="https://use.fontawesome.com/86387f4e59.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -170,11 +175,11 @@
           </div>
         </div>
 
-         <!-- Segunda img-->
+        <!-- Segunda img-->
 
-         <div class="col-md-6">
+        <div class="col-md-6">
 
-        
+
           <div class="card mb-4 box-shadow">
             <div class="zoom lightbox">
               <a href="https://curriweb.000webhostapp.com/" target="_blank">
@@ -187,7 +192,8 @@
 
             <div class="card-body">
               <p class="card-text">
-                Application in which the user can create his curriculum online with course information, training and personal data, and can also generate a PDF of it.
+                Application in which the user can create his curriculum online with course information, training and
+                personal data, and can also generate a PDF of it.
               </p>
               <ul>
                 <li>PHP</li>
@@ -209,7 +215,7 @@
             </div>
           </div>
         </div>
-       
+
 
         <!-- Terceira img-->
         <div class="col-md-6">
@@ -371,21 +377,62 @@
             </div>
           </div>
         </div>
-</div>
+      </div>
+
+
+      <!-- Button read more -->
+      <input type="checkbox" id="check">
+      <label for="check" class="btn btn-info more_button">More Projects
+        <br>▼
+      </label>
+      <!---->
+
+
+
+      <div class="row more_img">
+
         
+        <!-- Sétima img-->
+        <div class="col-md-6">
 
-        <!-- Button read more -->
-        <input type="checkbox" id="check">
-        <label for="check" class="btn btn-info more_button">More Projects
-          <br>▼
-        </label>
-        <!---->
-
+          <div class="card mb-4 box-shadow">
+            <div class="zoom lightbox3">
+              <a href="https://cosmoshoppecommerce.000webhostapp.com/public/" target="_blank">
+                <img class="imgSocial" src="imgs/cosmoshop.png" data-holder-rendered="true" id='imagem'></a>
+            </div>
+            <div class="text-item">
+              <h2>cosmoshop - Ecommerce</h2>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Mini ecommerce project to test the features of the Laravel 
+                framework and using the PagSeguro api for card purchases.
+              </p>
+              <ul>
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>Js / Jquery</li>
+                <li>MySQL</li>
+              </ul>
+              <!--Aqui são as alteração dos links do botão-->
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://cosmoshoppecommerce.000webhostapp.com/public/" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-success">View Project
+                    </button>
+                  </a>
+                  <a href="https://github.com/LuisLessi/CosmoShop-Ecommerce" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         
-
-        <div class="row more_img">
-
-           <!-- Sétima img-->     
+        
+        
+        <!-- Oitava img-->
         <div class="col-md-6">
 
           <div class="card mb-4 box-shadow">
@@ -424,11 +471,11 @@
             </div>
           </div>
         </div>
-       
 
 
-          <!-- Oitava img-->
-          <div class="col-md-6">
+
+        <!-- Nona img-->
+        <div class="col-md-6">
 
           <div class="card mb-4 box-shadow">
             <div class="zoom lightbox">
@@ -466,176 +513,178 @@
           </div>
         </div>
 
-          <!-- Nona img-->
-          <div class="col-md-6">
+        <!-- Décima img-->
+        <div class="col-md-6">
 
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox3">
-                <a href="https://quiz-vue3.netlify.app/#/" target="_blank">
-                  <img class="imgSocial" src="imgs/quiz-app.png" data-holder-rendered="true" id='imagem'></a>
-              </div>
-              <div class="text-item">
-                <h2>Quiz App</h2>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Quiz system for API, Props and Router-Link composition study purposes. The quiz consists of three
-                  questions from three categories: Mathematics, Chemistry and Biology.
-                </p>
-                <ul>
-                  <li>Vue3</li>
-                  <li>CSS / Bootstrap</li>
-                  <li>HTML</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://quiz-vue3.netlify.app/#/" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/Quiz-App" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
+          <div class="card mb-4 box-shadow">
+            <div class="zoom lightbox3">
+              <a href="https://quiz-vue3.netlify.app/#/" target="_blank">
+                <img class="imgSocial" src="imgs/quiz-app.png" data-holder-rendered="true" id='imagem'></a>
+            </div>
+            <div class="text-item">
+              <h2>Quiz App</h2>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Quiz system for API, Props and Router-Link composition study purposes. The quiz consists of three
+                questions from three categories: Mathematics, Chemistry and Biology.
+              </p>
+              <ul>
+                <li>Vue3</li>
+                <li>CSS / Bootstrap</li>
+                <li>HTML</li>
+              </ul>
+              <!--Aqui são as alteração dos links do botão-->
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://quiz-vue3.netlify.app/#/" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-success">View Project
+                    </button>
+                  </a>
+                  <a href="https://github.com/LuisLessi/Quiz-App" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Décima img-->
-          <div class="col-md-6">
+        <!-- Décima primeira img-->
+        <div class="col-md-6">
 
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox3">
-                <a href="https://leiloes-start.herokuapp.com/" target="_blank">
-                  <img class="imgSocial" src="imgs/leiloes_start.png" data-holder-rendered="true" id='imagem'></a>
-              </div>
-              <div class="text-item">
-                <h2>Leilões Start</h2>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  This project was carried out as a technical test of the selection process for employment at
-                  the company Dix Digital, with the objective of creating an auction site containing login and
-                  registration authorization, live auctions, scheduled auctions and the scheduling of new auctions
-                  (if the user is PJ)
-                </p>
-                <ul>
-                  <li>VueJs</li>
-                  <li>CSS / Bootstrap</li>
-                  <li>JavaScript</li>
-                  <li>Firebase</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://leiloes-start.herokuapp.com/" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/Site-Leilao" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
+          <div class="card mb-4 box-shadow">
+            <div class="zoom lightbox3">
+              <a href="https://leiloes-start.herokuapp.com/" target="_blank">
+                <img class="imgSocial" src="imgs/leiloes_start.png" data-holder-rendered="true" id='imagem'></a>
+            </div>
+            <div class="text-item">
+              <h2>Leilões Start</h2>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                This project was carried out as a technical test of the selection process for employment at
+                the company Dix Digital, with the objective of creating an auction site containing login and
+                registration authorization, live auctions, scheduled auctions and the scheduling of new auctions
+                (if the user is PJ)
+              </p>
+              <ul>
+                <li>VueJs</li>
+                <li>CSS / Bootstrap</li>
+                <li>JavaScript</li>
+                <li>Firebase</li>
+              </ul>
+              <!--Aqui são as alteração dos links do botão-->
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://leiloes-start.herokuapp.com/" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-success">View Project
+                    </button>
+                  </a>
+                  <a href="https://github.com/LuisLessi/Site-Leilao" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Decima primeira img-->
-          <div class="col-md-6">
+        <!-- Decima segunda img-->
+        <div class="col-md-6">
 
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox2">
+          <div class="card mb-4 box-shadow">
+            <div class="zoom lightbox2">
 
-                <a href="https://dashboard-api.netlify.app/" target="_blank">
-                  <img class="imgSocial" src="imgs/dashboard_api.png" data-holder-rendered="true"></a>
-              </div>
-              <div class="text-item">
-                <h2>Dashboard API</h2>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Dashboard app using vue 3 with axios, communicating with a Laravel server on the backend. Application
-                  for studying REST API.</p>
-                <ul>
-                  <li>VUE 3</li>
-                  <li>SCSS / Bootstrap</li>
-                  <li>HTML</li>
-                  <li>Laravel</li>
-                  <li>PHP</li>
-                  <li>Postman</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="dashboard-api.netlify.app" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/Dashbord-API" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
+              <a href="https://dashboard-api.netlify.app/" target="_blank">
+                <img class="imgSocial" src="imgs/dashboard_api.png" data-holder-rendered="true"></a>
+            </div>
+            <div class="text-item">
+              <h2>Dashboard API</h2>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Dashboard app using vue 3 with axios, communicating with a Laravel server on the backend. Application
+                for studying REST API.</p>
+              <ul>
+                <li>VUE 3</li>
+                <li>SCSS / Bootstrap</li>
+                <li>HTML</li>
+                <li>Laravel</li>
+                <li>PHP</li>
+                <li>Postman</li>
+              </ul>
+              <!--Aqui são as alteração dos links do botão-->
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="dashboard-api.netlify.app" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-success">View Project
+                    </button>
+                  </a>
+                  <a href="https://github.com/LuisLessi/Dashbord-API" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Decima segunda img-->
-          <div class="col-md-6">
 
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox2">
 
-                <a href="https://social-networking-project.netlify.app" target="_blank">
-                  <img class="imgSocial" src="imgs/perfilEstudante.jpg" data-holder-rendered="true"></a>
-              </div>
-              <div class="text-item">
-                <h2>Social Networking</h2>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Software engineering lab class project (Working with the Postman API, NodeJs on the Back and Nuxt/Vue
-                  on
-                  the front). Project inspired by a social network similar to Linkedin's role in uniting students and
-                  companies in one place.</p>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS / Bootstrap</li>
-                  <li>JavaScript</li>
-                  <li>NodeJs</li>
-                  <li>VueJS/NuxtJS</li>
-                  <li>Postman</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://social-networking-project.netlify.app" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/Social-Networking-2.0-NuxtJs-" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
+
+        <!-- Button read more -->
+        <input type="checkbox" id="check2">
+        <label for="check2" class="btn btn-info more_button">More Projects
+          <br>▼
+        </label>
+        <!---->
+        <div class="row more_img2">
+
+          
+        <!-- Decima terceira img-->
+        <div class="col-md-6">
+
+          <div class="card mb-4 box-shadow">
+            <div class="zoom lightbox2">
+
+              <a href="https://social-networking-project.netlify.app" target="_blank">
+                <img class="imgSocial" src="imgs/perfilEstudante.jpg" data-holder-rendered="true"></a>
+            </div>
+            <div class="text-item">
+              <h2>Social Networking</h2>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Software engineering lab class project (Working with the Postman API, NodeJs on the Back and Nuxt/Vue
+                on
+                the front). Project inspired by a social network similar to Linkedin's role in uniting students and
+                companies in one place.</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS / Bootstrap</li>
+                <li>JavaScript</li>
+                <li>NodeJs</li>
+                <li>VueJS/NuxtJS</li>
+                <li>Postman</li>
+              </ul>
+              <!--Aqui são as alteração dos links do botão-->
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://social-networking-project.netlify.app" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-success">View Project
+                    </button>
+                  </a>
+                  <a href="https://github.com/LuisLessi/Social-Networking-2.0-NuxtJs-" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-
-         
-          <!-- Button read more -->
-          <input type="checkbox" id="check2">
-          <label for="check2" class="btn btn-info more_button">More Projects
-            <br>▼
-          </label>
-          <!---->
-          <div class="row more_img2">
-
-             <!-- decima terceira img-->
+          <!-- decima quarta img-->
           <div class="col-md-6">
 
             <div class="card mb-4 box-shadow">
@@ -673,7 +722,7 @@
           </div>
 
 
-            <!-- decima quarta img-->
+          <!-- decima quinta img-->
           <div class="col-md-6">
 
             <div class="card mb-4 box-shadow">
@@ -686,7 +735,7 @@
               </div>
               <div class="card-body">
                 <p class="card-text">
-                  Recreation of the mobile interface of the nubank 
+                  Recreation of the mobile interface of the nubank
                   app using the Quasar library as a tool study.</p>
                 <ul>
                   <li>HTML</li>
@@ -711,133 +760,133 @@
           </div>
 
 
-            <!-- Decima quinta img-->
-            <div class="col-md-6">
+          <!-- Decima sexta img-->
+          <div class="col-md-6">
 
-              <div class="card mb-4 box-shadow">
-                <div class="zoom lightbox4">
-                  <a href="https://day-note-project.netlify.app/" target="_blank">
-                    <img class="imgSocial" src="imgs/Day_Notes.jpg" data-holder-rendered="true" id='imagem'></a>
-                </div>
-                <div class="text-item">
-                  <h2>Day Notes</h2>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">
-                    Notepad/card project (being able to define which notes have priority and filter them)
-                    using NodeJs and ReactJs.</p>
-                  <ul>
-                    <li>ReactJs</li>
-                    <li>NodeJs</li>
-                    <li>JavaScript</li>
-                    <li>CSS</li>
-                    <li>MongoDB</li>
-                    <li>Postman</li>
-                  </ul>
-                  <!--Aqui são as alteração dos links do botão-->
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="https://day-note-project.netlify.app/" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-success">View Project
-                        </button>
-                      </a>
-                      <a href="https://github.com/LuisLessi/Day-Notes" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                      </a>
-                    </div>
+            <div class="card mb-4 box-shadow">
+              <div class="zoom lightbox4">
+                <a href="https://day-note-project.netlify.app/" target="_blank">
+                  <img class="imgSocial" src="imgs/Day_Notes.jpg" data-holder-rendered="true" id='imagem'></a>
+              </div>
+              <div class="text-item">
+                <h2>Day Notes</h2>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Notepad/card project (being able to define which notes have priority and filter them)
+                  using NodeJs and ReactJs.</p>
+                <ul>
+                  <li>ReactJs</li>
+                  <li>NodeJs</li>
+                  <li>JavaScript</li>
+                  <li>CSS</li>
+                  <li>MongoDB</li>
+                  <li>Postman</li>
+                </ul>
+                <!--Aqui são as alteração dos links do botão-->
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://day-note-project.netlify.app/" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-success">View Project
+                      </button>
+                    </a>
+                    <a href="https://github.com/LuisLessi/Day-Notes" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                    </a>
                   </div>
                 </div>
               </div>
-            </div>
-
-
-
-            <!-- decima sexta img-->
-            <div class="col-md-6">
-
-              <div class="card mb-4 box-shadow">
-                <div class="zoom lightbox3">
-                  <a href="https://busca-dev.netlify.app" target="_blank">
-                    <img class="imgSocial" src="imgs/bsucadev.png" data-holder-rendered="true" id='imagem'></a>
-                </div>
-                <div class="text-item">
-                  <h2>Busca Dev</h2>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">
-                    Personal project with an idea similar to "GeekHunter". The idea was to study the tools that the
-                    Booststrap project offers, and in the future continue with the backend in NodeJS.</p>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS / Bootstrap</li>
-                    <li>JavaScript</li>
-                    <li>VueJS/NuxtJS</li>
-                  </ul>
-                  <!--Aqui são as alteração dos links do botão-->
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="https://busca-dev.netlify.app" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-success">View Project
-                        </button>
-                      </a>
-                      <a href="https://github.com/LuisLessi/Busca-Dev" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <!-- Décima sétima img-->
-            <div class="col-md-6">
-
-              <div class="card mb-4 box-shadow">
-                <div class="zoom lightbox3">
-                  <a href="https://github.com/LuisLessi/Blog-App" target="_blank">
-                    <img class="imgSocial" src="imgs/blog_stacks.png" data-holder-rendered="true" id='imagem'></a>
-                </div>
-                <div class="text-item">
-                  <h2>Blog stacks</h2>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">
-                    Blog which gathers posts published by users and separated by their appropriate categories (in which
-                    categories can only be created or removed if the user is an admin).
-                  </p>
-                  <ul>
-                    <li>Handlebars</li>
-                    <li>CSS / Bootstrap</li>
-                    <li>NodeJs</li>
-                    <li>MongoDB/MySQL</li>
-                  </ul>
-                  <!--Aqui são as alteração dos links do botão-->
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-success" disabled>View Project
-                        </button>
-                      </a>
-                      <a href="https://github.com/LuisLessi/Blog-App" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="col-md-6">
-              <div class="card mb-4 box-shadow">
-              </div>
-
             </div>
           </div>
 
+
+
+          <!-- decima sétima img-->
+          <div class="col-md-6">
+
+            <div class="card mb-4 box-shadow">
+              <div class="zoom lightbox3">
+                <a href="https://busca-dev.netlify.app" target="_blank">
+                  <img class="imgSocial" src="imgs/bsucadev.png" data-holder-rendered="true" id='imagem'></a>
+              </div>
+              <div class="text-item">
+                <h2>Busca Dev</h2>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Personal project with an idea similar to "GeekHunter". The idea was to study the tools that the
+                  Booststrap project offers, and in the future continue with the backend in NodeJS.</p>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS / Bootstrap</li>
+                  <li>JavaScript</li>
+                  <li>VueJS/NuxtJS</li>
+                </ul>
+                <!--Aqui são as alteração dos links do botão-->
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://busca-dev.netlify.app" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-success">View Project
+                      </button>
+                    </a>
+                    <a href="https://github.com/LuisLessi/Busca-Dev" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Décima oitava img-->
+          <div class="col-md-6">
+
+            <div class="card mb-4 box-shadow">
+              <div class="zoom lightbox3">
+                <a href="https://github.com/LuisLessi/Blog-App" target="_blank">
+                  <img class="imgSocial" src="imgs/blog_stacks.png" data-holder-rendered="true" id='imagem'></a>
+              </div>
+              <div class="text-item">
+                <h2>Blog stacks</h2>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Blog which gathers posts published by users and separated by their appropriate categories (in which
+                  categories can only be created or removed if the user is an admin).
+                </p>
+                <ul>
+                  <li>Handlebars</li>
+                  <li>CSS / Bootstrap</li>
+                  <li>NodeJs</li>
+                  <li>MongoDB/MySQL</li>
+                </ul>
+                <!--Aqui são as alteração dos links do botão-->
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-success" disabled>View Project
+                      </button>
+                    </a>
+                    <a href="https://github.com/LuisLessi/Blog-App" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+            </div>
+
+          </div>
         </div>
+
+      </div>
 
 
     </div>
@@ -849,12 +898,18 @@
   <section class="jumbotron text-center corPrimaria" id="experience">
     <div class="container">
       <h2 class="jumbotron-heading titulosBrancos">Professional Experience</h2>
-        
+
       <ul style="color: white;">
-        <li><p class="lead textoBranco">Drive7 - 4mm Servicos Em Tecnologia / Junior Front End Developer (Feb 2023 – Currently)</p>
-          </li>
-        <li><p class="lead textoBranco">CRIS.NET / Infrastructure technician (Dec 2022 – Apr 2023)</p></li>
-        <li><p class="lead textoBranco">Sistel Fibra / Technical support (Oct 2020 - Dec 2022)</p></li>
+        <li>
+          <p class="lead textoBranco">Drive7 - 4mm Servicos Em Tecnologia / Junior Front End Developer (Feb 2023 –
+            Currently)</p>
+        </li>
+        <li>
+          <p class="lead textoBranco">CRIS.NET / Infrastructure technician (Dec 2022 – Apr 2023)</p>
+        </li>
+        <li>
+          <p class="lead textoBranco">Sistel Fibra / Technical support (Oct 2020 - Dec 2022)</p>
+        </li>
         <!-- Adicione mais itens à lista, se necessário -->
       </ul>
     </div>
@@ -878,7 +933,7 @@
         <footer class="blockquote-footer" style="color:#18bc9c">Ong Fênix<cite title="Source Title"></cite></footer>
         <p class="mb-0">Desenvolvimento web moderno com JavaScript (complete)</p>
         <footer class="blockquote-footer" style="color:#18bc9c">Cod3r<cite title="Source Title"></cite></footer>
-        
+
         <p class="mb-0">UX/UI Design com
           VUEJS (complete)</p>
         <footer class="blockquote-footer" style="color:#18bc9c">Origamid
