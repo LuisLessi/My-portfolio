@@ -5,37 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luís portfolio</title>
+  
+  <!-- Única inclusão do Bootstrap 4.3.1 CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Inclusão do jQuery 3.3.1 slim -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
 
+  <!-- Inclusão do Popper.js 1.14.7 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
 
+  <!-- Inclusão do Bootstrap 4.3.1 JS -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
+  <!-- Inclusão do Font Awesome -->
   <script src="https://use.fontawesome.com/86387f4e59.js"></script>
+
+  <!-- Única inclusão do Bootstrap 5.1.2 JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 
-
-  <script src="https://use.fontawesome.com/86387f4e59.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  <script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
-  <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <link rel="script" href="script.js">
+  <!-- Seus links de estilo e script -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="whats_icon.css">
   <link rel="stylesheet" href="button_more.css">
+  <link rel="script" href="script.js">
   <link rel="icon" href="./imgs/icon_port.png">
-
-
 </head>
 
 
@@ -51,20 +52,24 @@
     }
   });
 </script>
-
+<style>
+  /* Defina a cor desejada para as barras do menu hamburguer */
+  .custom-toggler-icon .bar {
+    background-color: red;
+  }
+</style>
+<body>
 <body>
   <div class="sticky-top" id="menu">
     <nav class="corSecundaria navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand textoBranco" href="#">Luís Felipe</a>
 
-      <!--Menu Hamburguer-->
-
-
-      <!--Teste-->
+      <!-- Menu Hamburguer (Dropdown) -->
       <div class="dropdown">
-        <button class="navbar-toggler" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-          aria-label="Toggle navigation" aria-controls="navbarSupportedContent" aria-expanded="false">
+        <button class="navbar-toggler" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span class="navbar-toggler-icon"></span>
+          </span>
+
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item" href="#projetos">Projects</a></li>
@@ -72,10 +77,10 @@
           <li><a class="dropdown-item" href="#qualificações">Qualifications</a></li>
           <li><a class="dropdown-item" href="#skills">Skills</a></li>
           <li><a class="dropdown-item" href="#contato">Contacts</a></li>
-
         </ul>
       </div>
-      <!--Navbar-->
+
+      <!-- Navbar -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
         </ul>
@@ -99,12 +104,9 @@
       </div>
     </nav>
 
-
-    <!--Hook Top-->
-    <a class="w-toplink pos_right  my-element active" href="#" title="Voltar ao Topo"><span>▲</span></a>
+    <!-- Hook Top -->
+    <a class="w-toplink pos_right my-element active" href="#" title="Voltar ao Topo"><span>▲</span></a>
     <!---->
-
-
   </div>
   <section class="jumbotron text-center codeBack">
     <div class="container ">
