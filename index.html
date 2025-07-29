@@ -184,28 +184,22 @@
           </div>
 
           <div class="col-md-6">
-              <!-- Versão desktop -->
-              <div class="card mb-4 box-shadow desktop-only">
-                <div class="zoom lightbox">
-                  <a href="https://github.com/LuisLessi/RPA-Protheus" target="_blank">
-                    <img class="card-img-top" src="https://github.com/user-attachments/assets/fdeab94e-241e-4be6-aca5-252e3e063030" data-holder-rendered="true">
-                  </a>
-                </div>
+            <div class="card mb-4 box-shadow">
+              <div class="zoom lightbox">
+                <a href="https://github.com/LuisLessi/RPA-Protheus" target="_blank">
+                  <picture>
+                    <!-- Imagem estática para mobile -->
+                    <source srcset="imgs/rpa-protheus.png" media="(max-width: 768px)">
+                    <!-- GIF para desktop -->
+                    <img class="card-img-top" src="https://github.com/user-attachments/assets/fdeab94e-241e-4be6-aca5-252e3e063030" alt="RPA Protheus">
+                  </picture>
+                </a>
               </div>
-
-              <!-- Versão mobile -->
-              <div class="card mb-4 box-shadow mobile-only">
-                <div class="zoom lightbox">
-                  <a href="https://github.com/LuisLessi/RPA-Protheus" target="_blank">
-                    <img class="imgSocial" src="imgs/rpa-protheus.png" data-holder-rendered="true" id="imagem">
-                  </a>
-                </div>
-              </div>
-
+          
               <div class="text-item">
                 <h2>RPA - Protheus Compras</h2>
               </div>
-
+          
               <div class="card-body">
                 <p class="card-text">
                   RPA created with Python to collect purchase orders in Protheus. After collecting,
@@ -218,12 +212,10 @@
                   <li>Pandas</li>
                   <li>Protheus ERP</li>
                 </ul>
-                <!--Aqui são as alteração dos links do botão-->
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <a href="https://github.com/LuisLessi/RPA-Protheus" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project
-                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-success">View Project</button>
                     </a>
                     <a href="https://github.com/LuisLessi/RPA-Protheus" target="_blank">
                       <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
