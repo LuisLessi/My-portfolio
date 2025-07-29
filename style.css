@@ -3,7 +3,7 @@
 
 /* SLIDESHOW
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.featured-wrapper {
+  .featured-wrapper {
     position: relative;
 }
 
@@ -601,3 +601,21 @@ html {
     margin: 30px;
     text-decoration: none;
 }
+
+/* Mostrar apenas no desktop */
+.desktop-only {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+  
+  /* Quando estiver em dispositivos móveis */
+  @media (max-width: 768px) {
+    .desktop-only {
+      display: none;
+    }
+    .mobile-only {
+      display: block;
+    }
+  }
