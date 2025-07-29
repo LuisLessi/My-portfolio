@@ -6,11 +6,19 @@
     display: none;
 }
 
+#check3{
+    display: none;
+}
+
 .more_img{
     display: none;
 }
 
 .more_img2{
+    display: none;
+}
+
+.more_img3{
     display: none;
 }
 
@@ -25,6 +33,11 @@
 #check2:checked ~ .more_img2 {
     display: flex;
 }
+
+#check3:checked ~ .more_img3 {
+    display: flex;
+}
+
 @media only screen and (max-width: 1100px) {
     .more_button{
         margin-left: 35%;
