@@ -339,8 +339,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 150px;
   }
 
+}
+
 .other-project {
-  display: none !important;
+  display: none;
 }
 
 .other-project-indicator {
@@ -359,5 +361,4 @@ h1, h2, h3, h4, h5, h6 {
 #viewAllProjects:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
 }
