@@ -4,1382 +4,1014 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luís portfolio</title>
+  <title>Luís Felipe - Data Specialist</title>
 
-  <!-- Única inclusão do Bootstrap 4.3.1 CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <!-- Inclusão do jQuery 3.3.1 slim -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-
-  <!-- Inclusão do Popper.js 1.14.7 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-
-  <!-- Inclusão do Bootstrap 4.3.1 JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-  <!-- Inclusão do Font Awesome -->
+  <!-- Bootstrap 5.1.2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/86387f4e59.js"></script>
-
-  <!-- Única inclusão do Bootstrap 5.1.2 JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Seus links de estilo e script -->
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <!-- AOS Library for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="whats_icon.css">
-  <link rel="stylesheet" href="button_more.css">
-  <link rel="script" href="script.js">
+
+  <!-- Icon Page -->
   <link rel="icon" href="./imgs/icon_port.png">
 </head>
 
-
-<script>
-  window.addEventListener('scroll', function () {
-    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    const target = document.querySelector('.my-element');
-    target.style.display = 'none';
-    if (scrollPosition < 1100) {
-      target.style.display = 'none';
-    } else {
-      target.style.display = 'block';
-    }
-  });
-</script>
-<style>
-  /* Defina a cor desejada para as barras do menu hamburguer */
-  .custom-toggler-icon .bar {
-    background-color: red;
-  }
-</style>
-
 <body>
-
-  <body>
-    <div class="sticky-top" id="menu">
-      <nav class="corSecundaria navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand textoBranco" href="#">Luís Felipe</a>
-
-        <!-- Menu Hamburguer (Dropdown) -->
-        <div class="dropdown">
-          <button class="navbar-toggler" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <span class="navbar-toggler-icon"></span>
-            </span>
-
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#projetos">Projects</a></li>
-            <li><a class="dropdown-item" href="#experience">Experience</a></li>
-            <li><a class="dropdown-item" href="#qualificações">Qualifications</a></li>
-            <li><a class="dropdown-item" href="#skills">Skills</a></li>
-            <li><a class="dropdown-item" href="#contato">Contacts</a></li>
-          </ul>
-        </div>
-
-        <!-- Navbar -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-          </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link textoBranco" href="#projetos">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link textoBranco" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link textoBranco" href="#qualificações">Qualifications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link textoBranco" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link textoBranco" href="#contato">Contacts</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <!-- Hook Top -->
-      <a class="w-toplink pos_right my-element active" href="#" title="Voltar ao Topo"><span>▲</span></a>
-      <!---->
-    </div>
-    <section class="jumbotron text-center codeBack">
-      <div class="container ">
-        <img class="foto-perfil " src="imgs/Perfil2.jpg" alt="">
-        <h1 class="jumbotron-heading textoBranco">Hi</h1>
-        <h1 class="jumbotron-heading textoBranco">My name is
-          Luís</h1>
-        <p class="lead textoBranco">Data Specialist 🎲 <br> Coffee Lover &#x2615
-        </p>
-        <a href="https://www.linkedin.com/in/lu%C3%ADs-felipe-lessi-silva-9496aa1a1/" target="_blank">
-          <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"
-            target="_blank"></a>
-        <a href="https://github.com/LuisLessi" target="_blank">
-          <img src="https://img.shields.io/badge/-Github-%23000000?style=for-the-badge&logo=github&logoColor=white">
-          <a href="https://www.instagram.com/luis_lessi/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white"
-              target="_blank"></a>
-
-
-          <a href="https://drive.google.com/file/d/1riY54Hq7IQvDPpz89BCmgRT4FzDK3BL1/view?usp=sharing"
-            class="btn btn-dark my-2 lead textoBranco" target="_blank">💼 Curriculum 
-          </a>
-
-      </div>
-
-
-    </section>
-
-    <div class="album py-5 bg-light " id="projetos">
-
-      <div class="container">
-        <h2 class="jumbotron-heading text-center titulosverde">projects</h2>
-
-        <div class="row">
-
-          <!-- Primeira img-->
-          <div class="col-md-6">
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox3">
-                <a href="https://crisnet.netlify.app/" target="_blank">
-                  <img class="imgSocial" src="imgs/cris-net.png" data-holder-rendered="true" id='imagem'></a>
-              </div>
-              <div class="text-item">
-                <h2>Cris Net</h2>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Website I made for the company I currently work for, to replace the other website that had an outdated
-                  look and no responsiveness.
-
-                </p>
-                <ul>
-                  <li>VueJs</li>
-                  <li>CSS / Bootstrap</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://crisnet.netlify.app/" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/Cris-Net-Site" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox">
-                <a href="https://github.com/LuisLessi/RPA-Protheus" target="_blank">
-                  <picture>
-                    <!-- Imagem estática para mobile -->
-                    <source srcset="imgs/rpa-protheus.png" media="(max-width: 768px)">
-                    <!-- GIF para desktop -->
-                    <img class="card-img-top" src="https://github.com/user-attachments/assets/fdeab94e-241e-4be6-aca5-252e3e063030" alt="RPA Protheus">
-                  </picture>
-                </a>
-              </div>
-          
-              <div class="text-item">
-                <h2>RPA - Protheus Compras</h2>
-              </div>
-          
-              <div class="card-body">
-                <p class="card-text">
-                  RPA created with Python to collect purchase orders in Protheus. After collecting,
-                  it creates a spreadsheet with the following information: Order number, whether it was sent to the inspector,
-                  Branch, Supplier, Product and Value.
-                </p>
-                <ul>
-                  <li>Python</li>
-                  <li>Selenium</li>
-                  <li>Pandas</li>
-                  <li>Protheus ERP</li>
-                </ul>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://github.com/LuisLessi/RPA-Protheus" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project</button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/RPA-Protheus" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Segunda img-->
-
-          <div class="col-md-6">
-
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox">
-                <a href="https://sites.google.com/view/e-commerce-data-pipeline/p%C3%A1gina-inicial" target="_blank">
-                  <img class="card-img-top" src="imgs/E-Commerce_Data_Pipeline.png" data-holder-rendered="true"></a>
-              </div>
-
-              <div class="text-item">
-                <h2>E-Commerce Data Pipeline</h2>
-              </div>
-
-              <div class="card-body">
-                <p class="card-text">
-                  Complete data engineering pipeline that processes Brazilian e-commerce data,
-                  from ingestion to analytical visualizations.
-                </p>
-                <ul>
-                  <li>Python</li>
-                  <li>DuckDB</li>
-                  <li>Dbt</li>
-                  <li>Power BI</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://sites.google.com/view/e-commerce-data-pipeline/p%C3%A1gina-inicial" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/Ecommerce-Data-Pipeline-From-Raw-Data-to-Business-Insights/tree/master" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <!-- Segunda img-->
-
-          <div class="col-md-6">
-
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox">
-                <a href="https://sites.google.com/view/analise-ciberseguranca-br/p%C3%A1gina-inicial" target="_blank">
-                  <img class="card-img-top" src="imgs/pipeline-ciberseugrança.png" data-holder-rendered="true"></a>
-              </div>
-
-              <div class="text-item">
-                <h2>ETL Pipeline - Cybersecurity Incidents BR</h2>
-              </div>
-
-              <div class="card-body">
-                <p class="card-text">
-                  Data pipeline that collects, processes and analyzes official records of cyber incidents in Brazil
-                  (2010-2019), using public data from CERT.br (Center for Studies,
-                  Response and Treatment of Security Incidents in Brazil).
-                </p>
-                <ul>
-                  <li>Python (Pandas & Scikit Learn)</li>
-                  <li>SQLite</li>
-                  <li>Matplotlib</li>
-                  <li>Seaborn</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://sites.google.com/view/analise-ciberseguranca-br/p%C3%A1gina-inicial" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/Analise-de-Incidentes-de-Seguranca-da-Informacao-no-Brasil/tree/master" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <!-- Segunda img-->
-
-          <div class="col-md-6">
-
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox">
-                <a href="https://sites.google.com/view/monitoramento-da-covid/p%C3%A1gina-inicial" target="_blank">
-                  <img class="card-img-top" src="imgs/covid.png" data-holder-rendered="true"></a>
-              </div>
-
-              <div class="text-item">
-                <h2>Monitoramento COVID-19</h2>
-              </div>
-
-              <div class="card-body">
-                <p class="card-text">
-                  COVID data dashboard report related to the pandemic. Project using IBGE data and using
-                  the PowerBI tool to create graphics and cads.
-                </p>
-                <ul>
-                  <li>Power BI</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://sites.google.com/view/monitoramento-da-covid/p%C3%A1gina-inicial" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/covid19-brasil-2021-powerbi" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <!-- Segunda img-->
-          <div class="col-md-6">
-
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox">
-                <a href="https://sites.google.com/view/anlisefinanceiradeprojetos/p%C3%A1gina-inicial" target="_blank">
-                  <img class="card-img-top" src="imgs/dashboard_finan.jpg" data-holder-rendered="true"></a>
-              </div>
-
-              <div class="text-item">
-                <h2>Dashboard Financeiro de Projetos</h2>
-              </div>
-
-              <div class="card-body">
-                <p class="card-text">
-                  This project was developed as part of a technical test for the BI Data Analyst position.
-                  The objective was to build an interactive Power BI dashboard focused on analyzing financial data and project status
-                  for a portfolio managed by Roberto Silva, Senior Project Manager.
-                </p>
-                <ul>
-                  <li>Power BI</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://sites.google.com/view/anlisefinanceiradeprojetos/p%C3%A1gina-inicial" target="_blank" >
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/Dashboard_PowerBI_Analise_Financeira_de_Projetos" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Sexta img-->
-         
-
-
-
-
-
-
-        </div>
-
-
-        <!-- Button read more -->
-        <input type="checkbox" id="check">
-        <label for="check" class="btn btn-info more_button">More Projects
-          <br>▼
-        </label>
-        <!---->
-
-
-
-        <div class="row more_img">
-
-
-           <!-- Terceira img-->
-          <div class="col-md-6">
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox3">
-                <a href="https://pokedex-generatios.netlify.app" target="_blank">
-                  <img class="imgSocial" src="imgs/pokedex-web.png" data-holder-rendered="true" id='imagem'></a>
-              </div>
-              <div class="text-item">
-                <h2>Pokedex Web</h2>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Pokedex project using the PokeAPI API. In this project I'm using vue3 with vite, bootstrap and axios.
-                  In
-                  the application it is possible to filter pokemons from generation 1 to 5 and filter it randomly in the
-                  "all generations" tab.
-                </p>
-                <ul>
-                  <li>Vue3</li>
-                  <li>CSS / Bootstrap</li>
-                  <li>JavaScript</li>
-                  <li>Axios</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://pokedex-generatios.netlify.app" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/Pokedex-Web" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Quarta img-->
-
-          <div class="col-md-6">
-
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox">
-                <a href="https://github.com/LuisLessi/FinanceCircles" target="_blank">
-                  <img class="card-img-top" src="imgs/finances-circle.png" data-holder-rendered="true"></a>
-              </div>
-
-              <div class="text-item">
-                <h2>Finance Circles</h2>
-              </div>
-
-              <div class="card-body">
-                <p class="card-text">
-                  Investment group management system, in which it is possible to link
-                  groups to institutions and members to invest in products registered in the system.
-                </p>
-                <ul>
-                  <li>PHP</li>
-                  <li>Laravel</li>
-                  <li>MySql</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://financescirclesphp.000webhostapp.com/" target="_blank" >
-                      <button type="button" class="btn btn-sm btn-outline-success" disabled>View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/FinanceCircles" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-          <!-- Quarta img-->
-
-          <div class="col-md-6">
-
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox">
-                <a href="https://github.com/LuisLessi/Curriculo-online" target="_blank">
-                  <img class="card-img-top" src="imgs/curri_web.png" data-holder-rendered="true"></a>
-              </div>
-
-              <div class="text-item">
-                <h2>Curri Web</h2>
-              </div>
-
-              <div class="card-body">
-                <p class="card-text">
-                  Application in which the user can create his curriculum online with course information, training and
-                  personal data, and can also generate a PDF of it.
-                </p>
-                <ul>
-                  <li>PHP</li>
-                  <li>Bootstrap</li>
-                  <li>MySql</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://curriweb.000webhostapp.com/" target="_blank" >
-                      <button type="button" class="btn btn-sm btn-outline-success" disabled>View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/Curriculo-online" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox3">
-                <a href="https://github.com/LuisLessi" target="_blank">
-                  <img class="imgSocial" src="imgs/officesite.png" data-holder-rendered="true" id='imagem'></a>
-              </div>
-              <div class="text-item">
-                <h2>Pacote Office Website</h2>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Creation of 4 websites related to Office 365 tools (PowerBI, Excel, Word and PowerPoint).
-                  Site aimed at Remington students and VIP students that I taught</p>
-                <ul>
-                  <li>Gamma</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://excel-master-01scsoj.gamma.site/" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">Excel
-                      </button>
-                    </a>&nbsp
-                    <a href="https://power-bi-desktop-nkh3pgu.gamma.site/" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">PowerBI
-                      </button>
-                    </a>&nbsp
-                    <a href="https://o-que-e-o-powerpoint-42mz32j.gamma.site/" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">PowerPoint
-                      </button>
-                    </a>&nbsp
-                    <a href="https://microsoft-word-guide-9zkvmcx.gamma.site/" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">word
-                      </button>
-                    </a>&nbsp
-                    <a href="https://github.com/LuisLessi/Shauni_Dreadmaker" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary" disabled>Code</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Quinta img-->
-          <div class="col-md-6">
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox3">
-                <a href="https://shauni-dreadmaker.netlify.app/" target="_blank">
-                  <img class="imgSocial" src="imgs/dreadsShauni.png" data-holder-rendered="true" id='imagem'></a>
-              </div>
-              <div class="text-item">
-                <h2>Dreads da Shauní</h2>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Portfolio site created for Carolina dreadmaker to present her already provided services.
-                  Project created for a better study of ReactJs and its tools</p>
-                <ul>
-                  <li>ReactJs</li>
-                  <li>CSS / Bootstrap</li>
-                  <li>JavaScript</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="shauni-dreadmaker.netlify.app" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/Shauni_Dreadmaker" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-          <!-- Sexta img-->
-
-          <div class="col-md-6">
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox">
-                <a href="https://github.com/LuisLessi/Games-4-Dev" target="_blank">
-                  <img class="card-img-top" src="imgs/games4dev.png" data-holder-rendered="true"></a>
-              </div>
-
-              <div class="text-item">
-                <h2>Games 4 Dev</h2>
-              </div>
-
-              <div class="card-body">
-                <p class="card-text">
-                  This is an application created using the CodeIgniter 3 library. It allows users to perform CRUD
-                  operations on games. Users can create an account, add game data, and
-                  update or remove games from their own list. The application also includes
-                  a general game list, but each user can only edit or delete the games they have created.
-                </p>
-                <ul>
-                  <li>PHP</li>
-                  <li>Codeigniter 3</li>
-                  <li>Bootstrap</li>
-                  <li>MySql</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://games-4-dev.000webhostapp.com/" target="_blank" >
-                      <button type="button" class="btn btn-sm btn-outline-success" disabled>View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/Games-4-Dev" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Setima img-->
-
-          <div class="col-md-6">
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox">
-                <a href="https://shopping-storeapi.netlify.app/" target="_blank">
-                  <img class="card-img-top" src="imgs/shopping-store.png" data-holder-rendered="true"></a>
-              </div>
-
-              <div class="text-item">
-                <h2>Shopping Store</h2>
-              </div>
-
-              <div class="card-body">
-                <p class="card-text">
-                  Application of a small E-COMMERCE using the fakestore api (To generate fictitious product data).
-                  Utilizing vuex practices and API data manipulation.
-                </p>
-                <ul>
-                  <li>Vue 3</li>
-                  <li>Html/CSS</li>
-                  <li>Axios</li>
-                  <li>Vuex</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://shopping-storeapi.netlify.app/" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/Shopping-Store" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Oitava img-->
-          <div class="col-md-6">
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox3">
-                <a href="https://github.com/LuisLessi/CosmoShop-Ecommerce" target="_blank">
-                  <img class="imgSocial" src="imgs/cosmoshop.png" data-holder-rendered="true" id='imagem'></a>
-              </div>
-              <div class="text-item">
-                <h2>cosmoshop - Ecommerce</h2>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Mini ecommerce project to test the features of the Laravel
-                  framework and using the PagSeguro api for card purchases.
-                </p>
-                <ul>
-                  <li>PHP</li>
-                  <li>Laravel</li>
-                  <li>Js / Jquery</li>
-                  <li>MySQL</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://cosmoshoppecommerce.000webhostapp.com/public/" target="_blank" >
-                      <button type="button" class="btn btn-sm btn-outline-success" disabled>View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/CosmoShop-Ecommerce" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        
-
-
-
-          <!-- Button read more -->
-          <input type="checkbox" id="check2">
-          <label for="check2" class="btn btn-info more_button">More Projects
-            <br>▼
-          </label>
-          <!---->
-          <div class="row more_img2">
-
-                 <!-- Nona img-->
-          <div class="col-md-6">
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox3">
-                <a href="https://camargo-agronegocios.netlify.app/" target="_blank">
-                  <img class="imgSocial" src="imgs/camargo-agronegocios.png" data-holder-rendered="true"
-                    id='imagem'></a>
-              </div>
-              <div class="text-item">
-                <h2>Camargo Agronegocios</h2>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Second technical test by Dix Digital in which I use as a prototype the layout created in Figma by the
-                  company
-                  (https://www.figma.com/file/2LNgrjmv6Y75uGkArtBuo8/Camargo?node-id=4%3A1361&t=reyDsYAExTUkOyLT-0).
-
-                </p>
-                <ul>
-                  <li>VueJs</li>
-                  <li>CSS / Bootstrap</li>
-                  <li>Express</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://camargo-agronegocios.netlify.app/" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/Camargo-Agronegocios" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-       <!-- Decima img-->
-          <div class="col-md-6">
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox">
-                <a href="https://notes-app-vue.netlify.app/" target="_blank">
-                  <img class="card-img-top" src="imgs/notesApp_vueJs.png" data-holder-rendered="true"></a>
-              </div>
-
-              <div class="text-item">
-                <h2>Vue Notes</h2>
-              </div>
-
-              <div class="card-body">
-                <p class="card-text">
-                  Project created using the vue 3 composition API. Being able to create a notepad and its creation date
-                </p>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Vue3</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://notes-app-vue.netlify.app/" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project
-                      </button>
-
-                    </a>
-                    <a href="https://github.com/LuisLessi/Vue-Notes" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          
-            <!-- Décima primeira img-->
-          <div class="col-md-6">
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox3">
-                <a href="https://quiz-vue3.netlify.app/#/" target="_blank">
-                  <img class="imgSocial" src="imgs/quiz-app.png" data-holder-rendered="true" id='imagem'></a>
-              </div>
-              <div class="text-item">
-                <h2>Quiz App</h2>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Quiz system for API, Props and Router-Link composition study purposes. The quiz consists of three
-                  questions from three categories: Mathematics, Chemistry and Biology.
-                </p>
-                <ul>
-                  <li>Vue3</li>
-                  <li>CSS / Bootstrap</li>
-                  <li>HTML</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://quiz-vue3.netlify.app/#/" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success">View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/Quiz-App" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-            <!-- Décima segunda img-->
-          <div class="col-md-6">
-
-            <div class="card mb-4 box-shadow">
-              <div class="zoom lightbox3">
-                <a href="https://github.com/LuisLessi/Site-Leilao" target="_blank">
-                  <img class="imgSocial" src="imgs/leiloes_start.png" data-holder-rendered="true" id='imagem'></a>
-              </div>
-              <div class="text-item">
-                <h2>Leilões Start</h2>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  This project was carried out as a technical test of the selection process for employment at
-                  the company Dix Digital, with the objective of creating an auction site containing login and
-                  registration authorization, live auctions, scheduled auctions and the scheduling of new auctions
-                  (if the user is PJ)
-                </p>
-                <ul>
-                  <li>VueJs</li>
-                  <li>CSS / Bootstrap</li>
-                  <li>JavaScript</li>
-                  <li>Firebase</li>
-                </ul>
-                <!--Aqui são as alteração dos links do botão-->
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://leiloes-start.herokuapp.com/" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-success" disabled>View Project
-                      </button>
-                    </a>
-                    <a href="https://github.com/LuisLessi/Site-Leilao" target="_blank">
-                      <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-            <!-- Decima terceira img-->
-            <div class="col-md-6">
-
-              <div class="card mb-4 box-shadow">
-                <div class="zoom lightbox2">
-
-                  <a href="https://dashboard-api.netlify.app/" target="_blank">
-                    <img class="imgSocial" src="imgs/dashboard_api.png" data-holder-rendered="true"></a>
-                </div>
-                <div class="text-item">
-                  <h2>Dashboard API</h2>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">
-                    Dashboard app using vue 3 with axios, communicating with a Laravel server on the backend.
-                    Application
-                    for studying REST API.</p>
-                  <ul>
-                    <li>VUE 3</li>
-                    <li>SCSS / Bootstrap</li>
-                    <li>HTML</li>
-                    <li>Laravel</li>
-                    <li>PHP</li>
-                    <li>Postman</li>
-                  </ul>
-                  <!--Aqui são as alteração dos links do botão-->
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="dashboard-api.netlify.app" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-success">View Project
-                        </button>
-                      </a>
-                      <a href="https://github.com/LuisLessi/Dashbord-API" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <!-- Decima quarta img-->
-            <div class="col-md-6">
-
-              <div class="card mb-4 box-shadow">
-                <div class="zoom lightbox2">
-
-                  <a href="https://social-networking-project.netlify.app" target="_blank">
-                    <img class="imgSocial" src="imgs/perfilEstudante.jpg" data-holder-rendered="true"></a>
-                </div>
-                <div class="text-item">
-                  <h2>Social Networking</h2>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">
-                    Software engineering lab class project (Working with the Postman API, NodeJs on the Back and
-                    Nuxt/Vue
-                    on
-                    the front). Project inspired by a social network similar to Linkedin's role in uniting students and
-                    companies in one place.</p>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS / Bootstrap</li>
-                    <li>JavaScript</li>
-                    <li>NodeJs</li>
-                    <li>VueJS/NuxtJS</li>
-                    <li>Postman</li>
-                  </ul>
-                  <!--Aqui são as alteração dos links do botão-->
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="https://social-networking-project.netlify.app" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-success">View Project
-                        </button>
-                      </a>
-                      <a href="https://github.com/LuisLessi/Social-Networking-2.0-NuxtJs-" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- decima quinta img-->
-            <div class="col-md-6">
-
-              <div class="card mb-4 box-shadow">
-                <div class="zoom lightbox3">
-                  <a href="https://meet-quasar.netlify.app/#/" target="_blank">
-                    <img class="imgSocial" src="imgs/meet-quasar.png" data-holder-rendered="true" id='imagem'></a>
-                </div>
-                <div class="text-item">
-                  <h2>Meet Quasar</h2>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">
-                    Recreation of the home screen of the Google Meet website using
-                    the Quasar framework. Static page for framework study purposes.</p>
-                  <ul>
-                    <li>HTML</li>
-                    <li>SCSS / Bootstrap</li>
-                    <li>Vue</li>
-                    <li>Quasar</li>
-                  </ul>
-                  <!--Aqui são as alteração dos links do botão-->
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="https://meet-quasar.netlify.app/#/" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-success">View Project
-                        </button>
-                      </a>
-                      <a href="https://github.com/LuisLessi/Meet-Quasar" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <!-- decima sexta img-->
-            <div class="col-md-6">
-
-              <div class="card mb-4 box-shadow">
-                <div class="zoom lightbox3">
-                  <a href="https://nubank-vue-quasar.netlify.app/#/" target="_blank">
-                    <img class="imgSocial" src="imgs/nubank-quasar.png" data-holder-rendered="true" id='imagem'></a>
-                </div>
-                <div class="text-item">
-                  <h2>Nubank Quasar</h2>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">
-                    Recreation of the mobile interface of the nubank
-                    app using the Quasar library as a tool study.</p>
-                  <ul>
-                    <li>HTML</li>
-                    <li>SCSS / Bootstrap</li>
-                    <li>Vue</li>
-                    <li>Quasar</li>
-                  </ul>
-                  <!--Aqui são as alteração dos links do botão-->
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="https://nubank-vue-quasar.netlify.app/#/" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-success">View Project
-                        </button>
-                      </a>
-                      <a href="https://github.com/LuisLessi/Nubank-Quasar" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            
-            <!-- Button read more -->
-            <input type="checkbox" id="check3">
-            <label for="check3" class="btn btn-info more_button">More Projects
-              <br>▼
-            </label>
-            <!---->
-            <div class="row more_img3">
-
-             <!-- Decima setima img-->
-            <div class="col-md-6">
-
-              <div class="card mb-4 box-shadow">
-                <div class="zoom lightbox4">
-                  <a href="https://day-note-project.netlify.app/" target="_blank">
-                    <img class="imgSocial" src="imgs/Day_Notes.jpg" data-holder-rendered="true" id='imagem'></a>
-                </div>
-                <div class="text-item">
-                  <h2>Day Notes</h2>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">
-                    Notepad/card project (being able to define which notes have priority and filter them)
-                    using NodeJs and ReactJs.</p>
-                  <ul>
-                    <li>ReactJs</li>
-                    <li>NodeJs</li>
-                    <li>JavaScript</li>
-                    <li>CSS</li>
-                    <li>MongoDB</li>
-                    <li>Postman</li>
-                  </ul>
-                  <!--Aqui são as alteração dos links do botão-->
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="https://day-note-project.netlify.app/" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-success">View Project
-                        </button>
-                      </a>
-                      <a href="https://github.com/LuisLessi/Day-Notes" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>  
-
-            <!-- decima oitava img-->
-            <div class="col-md-6">
-
-              <div class="card mb-4 box-shadow">
-                <div class="zoom lightbox3">
-                  <a href="https://busca-dev.netlify.app" target="_blank">
-                    <img class="imgSocial" src="imgs/bsucadev.png" data-holder-rendered="true" id='imagem'></a>
-                </div>
-                <div class="text-item">
-                  <h2>Busca Dev</h2>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">
-                    Personal project with an idea similar to "GeekHunter". The idea was to study the tools that the
-                    Booststrap project offers, and in the future continue with the backend in NodeJS.</p>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS / Bootstrap</li>
-                    <li>JavaScript</li>
-                    <li>VueJS/NuxtJS</li>
-                  </ul>
-                  <!--Aqui são as alteração dos links do botão-->
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="https://busca-dev.netlify.app" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-success">View Project
-                        </button>
-                      </a>
-                      <a href="https://github.com/LuisLessi/Busca-Dev" target="_blank">
-                        <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          
-              <!-- Décima nona img-->
-              <div class="col-md-6">
-
-                <div class="card mb-4 box-shadow">
-                  <div class="zoom lightbox3">
-                    <a href="https://github.com/LuisLessi/Blog-App" target="_blank">
-                      <img class="imgSocial" src="imgs/blog_stacks.png" data-holder-rendered="true" id='imagem'></a>
-                  </div>
-                  <div class="text-item">
-                    <h2>Blog stacks</h2>
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text">
-                      Blog which gathers posts published by users and separated by their appropriate categories (in which
-                      categories can only be created or removed if the user is an admin).
-                    </p>
-                    <ul>
-                      <li>Handlebars</li>
-                      <li>CSS / Bootstrap</li>
-                      <li>NodeJs</li>
-                      <li>MongoDB/MySQL</li>
-                    </ul>
-                    <!--Aqui são as alteração dos links do botão-->
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="" target="_blank">
-                          <button type="button" class="btn btn-sm btn-outline-success" disabled>View Project
-                          </button>
-                        </a>
-                        <a href="https://github.com/LuisLessi/Blog-App" target="_blank">
-                          <button type="button" class="btn btn-sm btn-outline-primary">Code</button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-            </div>
-
-
-      </div>
-
-    </div>
-    </div>
-
-    <!-- Experiencia Profissional-->
-    <section class="jumbotron text-center corPrimaria" id="experience">
-      <div class="container">
-        <h2 class="jumbotron-heading titulosBrancos">Professional Experience</h2>
-
-        <ul style="color: white;">
-          <li>
-            <p class="lead textoBranco">Systems Analyst | Medilar Gestão em Saúde (Jun 2024 –
-              Currently)</p>
-          </li>
-          <li>
-            <p class="lead textoBranco">Technology teacher | Remington educação e tecnologia (Jan 2024 –
-              Jun 2024)</p>
-          </li>
-          <li>
-            <p class="lead textoBranco">Junior Front End Developer | Drive7 - 4mm Servicos Em Tecnologia (Feb 2023 –
-              Oct 2023)</p>
-          </li>
-          <li>
-            <p class="lead textoBranco">Infrastructure technician | CRIS.NET (Dec 2022 – Apr 2023)</p>
-          </li>
-          <li>
-            <p class="lead textoBranco">Technical support | Sistel Fibra (Oct 2020 - Dec 2022)</p>
-          </li>
-          <!-- Adicione mais itens à lista, se necessário -->
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Luís Felipe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
-    </section>
+    </div>
+  </nav>
 
-    <!-- Qualificações -->
-    <section class="jumbotron text-center" style="background-color: white !important;" id="qualificações">
-      <div class="container">
-
-        <h2 class="jumbotron-heading text-center titulosverde">
-          QUALIFICATIONS
-        </h2>
-        <blockquote class="blockquote text-center">
-          <p class="mb-0">MBA Engenharia de Big Data (In progress)</p>
-          <footer class="blockquote-footer" style="color:#18bc9c">Unyleya EAD <cite
-              title="Source Title"></cite>
-          </footer>
-          <p class="mb-0">MBA Ciência de Dados e Big Data Analytics (complete)</p>
-          <footer class="blockquote-footer" style="color:#18bc9c">Faculdade Metropolitana EAD <cite
-              title="Source Title"></cite>
-          </footer>
-          <p class="mb-0">Análise e desenvolvimento de Sistemas (complete)</p>
-          <footer class="blockquote-footer" style="color:#18bc9c">Fatec Taquaritinga <cite title="Source Title"></cite>
-          </footer>
-          <p class="mb-0">Técnico em Informatica (complete)</p>
-          <footer class="blockquote-footer " style="color:#18bc9c">UNESP-Jaboticabal<cite title="Source Title"></cite>
-          </footer>
-          <p class="mb-0">Manutenção de Computadores (complete)</p>
-          <footer class="blockquote-footer" style="color:#18bc9c">Ong Fênix<cite title="Source Title"></cite></footer>
-
-        </blockquote>
-      </div>
-    </section>
-
-    <!--Skills-->
-    <section class="jumbotron text-center corPrimaria" id="skills">
-      <div class="container">
-        <h2 class="jumbotron-heading titulosBrancos">Skills
-        </h2>
-        <div class="tech">
-
-          <p class="lead textoBranco">Front-End </p>
-          <div class="tech-icons">
-            <img src="./imgs/icon-html.png" class="icons" title="HTML">
-            <img src="./imgs/icon-css.png " class="icons" title="CSS">
-            <img src="./imgs/icon-js.png" class="icons" title="JavaScript">
-            <img src="./imgs/icon-vue.png" class="icons" title="VueJs">
-            <img src="./imgs/icon-nuxt.png" class="icons" title="NuxtJs">
-            <img src="./imgs/icon-quasar.png" class="icons" title="Quasar">
-            <img src="./imgs/icon-react.png" class="icons" title="ReactJs">
-            <img src="./imgs/icon-boot.png" class="icons" title="Bootstrap">
-            <img src="./imgs/scss-icon.png" class="icons" title="SCSS">
-
-          </div>
+  <!-- Hero Section -->
+  <header class="hero-section" id="home">
+    <div class="container text-center hero-content">
+      <div data-aos="fade-up">
+        <img src="imgs/Perfil2.jpg" alt="Luís Felipe" class="profile-img mb-4 rounded-circle">
+        <h1 class="mb-2">Luís Felipe Lessi Silva</h1>
+        <p class="lead mb-4">Data Specialist | BI Analyst | Data Engineer</p>
+        <div class="d-flex justify-content-center flex-wrap mb-4">
+          <span class="data-badge">Data Analysis 🎲</span>
+          <span class="data-badge">Visualization 📊</span>
+          <span class="data-badge">ETL/ELT 🔄</span>
+          <span class="data-badge">Developer 🖥️</span>
         </div>
-
-        <div class="tech">
-          <p class="lead textoBranco">Back-End</p>
-          <div class="tech-icons">
-            <img src="./imgs/icon-node.webp" class="icons" title="NodeJs">
-            <img src="./imgs/icon-laravel.png" class="icons" title="Laravel">
-            <img src="./imgs/icon-php.png" class="icons" title="PHP">
-            <img src="./imgs/icon-python.png" class="icons" title="Python">
-          </div>
-        </div>
-
-        <br>
-
-        <div class="tech">
-          <p class="lead textoBranco">Data</p>
-          <div class="tech-icons">
-            <img src="./imgs/duckDB-icon.png" class="icons" title="DuckDB">
-            <img src="./imgs/icon-mongo.webp" class="icons" title="MongoDB">
-            <img src="./imgs/mySql.png" class="icons" title="MySql">
-            <img src="./imgs/icon-PowerBI.png" class="icons" title="PowerBI">
-            <img src="./imgs/Airflow.png" class="icons" title="Airflow">
-            <img src="./imgs/Spark.png" class="icons" title="Spark">
-            <img src="./imgs/dbt.png" class="icons" title="dbt">
-            <img src="./imgs/Snowflake.png" class="icons" title="Snowflake">
-          </div>
-        </div>
-
-
-        <div class="tech">
-          <p class="lead textoBranco">Devops</p>
-          <div class="tech-icons">
-            <img src="./imgs/icon-postman.webp" class="icons" title="Postman">
-            <img src="./imgs/jira_icon.png" class="icons" title="Jira">
-            <img src="./imgs/bitbucket-icon.png" class="icons" title="bitBucket">
-            <img src="./imgs/git-icon.png" class="icons" title="Git">
-            <img src="./imgs/icon-gitlab.png" class="icons" title="GitLab">
-            <img src="./imgs/icon-docker.png" class="icons" title="Docker">
-          </div>
-        </div>
-
-    </section>
-
-    <!-- Contato -->
-    <section class="corPrimaria" id="contato" style="background-color: white !important;">
-      <div>
-        <div class="container-fluid">
-          <h3 style="padding-top: 60px;" class="text-center titulosverde">available for opportunities</h3>
-          <a href="mailto:luisadsfatec@hotmail.com">
-            <h4 class="text-center"> <img src="./imgs/email.png" class="icon-whats"> luisadsfatec@hotmail.com </h4>
+        <div class="d-flex justify-content-center gap-3 mb-4">
+          <a href="https://www.linkedin.com/in/lu%C3%ADs-felipe-lessi-silva-9496aa1a1/" target="_blank" class="btn btn-primary">
+            <i class="fa fa-linkedin me-2"></i> LinkedIn
           </a>
-
-          <br>
-          <h4 style="padding-bottom: 60px; margin-bottom: 0px;" class="text-center"> <img src="./imgs/zap.png "
-              class="icon-whats">
-            <a href="//wa.me/5516997929960" target="_blank">(16)99792-9960 (vivo)</a>
-          </h4>
+          <a href="https://github.com/LuisLessi" target="_blank" class="btn btn-dark">
+            <i class="fa fa-github me-2"></i> GitHub
+          </a>
+          <a href="https://drive.google.com/file/d/1riY54Hq7IQvDPpz89BCmgRT4FzDK3BL1/view?usp=sharing" target="_blank" class="btn btn-success">
+            <i class="fa fa-download me-2"></i> Resume
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </header>
 
-    <!-- Footer-->
-    <footer class="text-center corSecundaria textoFooter">
-      <p class="textoBranco">Thanks for viewing my portfolio</p>
+  <!-- Projects Section -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container py-5">
+    <h2 class="section-title center text-center mb-5" data-aos="fade-up">Data Projects</h2>
+    
+    <div class="row g-4">
+            <!-- Projetos de Dados (aparecem primeiro) -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/E-Commerce_Data_Pipeline.png" class="project-img" alt="E-Commerce Data Pipeline">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">DuckDB</span>
+              <span class="project-tag">Dbt</span>
+              <span class="project-tag">Power BI</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-success">Data Projects</span>
+            </div>
+            <h5 class="card-title">E-Commerce Data Pipeline</h5>
+            <p class="card-text">Complete data engineering pipeline that processes Brazilian e-commerce information, from ingestion to analytical visualizations.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://sites.google.com/view/e-commerce-data-pipeline/p%C3%A1gina-inicial" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/Ecommerce-Data-Pipeline-From-Raw-Data-to-Business-Insights/tree/master" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- ETL Pipeline - Cybersecurity -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/pipeline-ciberseugrança.png" class="project-img" alt="ETL Pipeline Cybersecurity">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Pandas</span>
+              <span class="project-tag">SQLite</span>
+              <span class="project-tag">Visualization</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-success">Data Projects</span>
+            </div>
+            <h5 class="card-title">ETL Pipeline - Cybersecurity Incidents BR</h5>
+            <p class="card-text">Data pipeline that collects, processes and analyzes official records of cyber incidents in Brazil (2010-2019).</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://sites.google.com/view/analise-ciberseguranca-br/p%C3%A1gina-inicial" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/Analise-de-Incidentes-de-Seguranca-da-Informacao-no-Brasil/tree/master" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Dashboard Financeiro -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/dashboard_finan.jpg" class="project-img" alt="Financial Dashboard">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">Power BI</span>
+              <span class="project-tag">Dashboard</span>
+              <span class="project-tag">Financial Analysis</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-success">Data Projects</span>
+            </div>
+            <h5 class="card-title">Projects Financial Dashboard</h5>
+            <p class="card-text">Interactive Power BI dashboard focused on analyzing financial data and project status for a management portfolio.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://sites.google.com/view/anlisefinanceiradeprojetos/p%C3%A1gina-inicial" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/Dashboard_PowerBI_Analise_Financeira_de_Projetos" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Monitoramento COVID-19 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/covid.png" class="project-img" alt="COVID-19 Monitoring">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">Power BI</span>
+              <span class="project-tag">Dashboard</span>
+              <span class="project-tag">Visualization</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-success">Data Projects</span>
+            </div>
+            <h5 class="card-title">COVID-19 Monitoring</h5>
+            <p class="card-text">COVID data dashboard report related to the pandemic, using IBGE data and Power BI to create informative graphs and cards.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://sites.google.com/view/monitoramento-da-covid/p%C3%A1gina-inicial" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/covid19-brasil-2021-powerbi" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- RPA Protheus -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="project-card">
+          <div class="project-img-container">
+            <picture>
+              <source srcset="imgs/rpa-protheus.png" media="(max-width: 768px)">
+              <img class="project-img" src="https://github.com/user-attachments/assets/fdeab94e-241e-4be6-aca5-252e3e063030" alt="RPA Protheus">
+            </picture>
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Selenium</span>
+              <span class="project-tag">Automation</span>
+              <span class="project-tag">Pandas</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-success">Data Projects</span>
+            </div>
+            <h5 class="card-title">RPA - Protheus Purchases</h5>
+            <p class="card-text">Automation with Python to collect purchase orders in Protheus, creating spreadsheets with order information, suppliers and values.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://github.com/LuisLessi/RPA-Protheus" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/RPA-Protheus" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <!--Whatsapp icon-->
-      <a href="//wa.me/5516997929960?text= Olá Luís tudo bem ? vi seu portfólio e estou interessado nos seus serviços, podemos conversar ?"
-        target="_blank" class="btn btn-maincolor2">
-        <img src="./imgs/whatsapp-icon.png" class="whats-link" alt="">
-      </a>
-      <!---->
-    </footer>
+      <!-- Adicione aqui os outros projetos de dados primeiro -->
+      
+      <!-- Projetos não relacionados a dados (inicialmente ocultos) -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/cris-net.png" class="project-img" alt="Cris Net Website">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">VueJs</span>
+              <span class="project-tag">CSS/Bootstrap</span>
+              <span class="project-tag">Web Development</span>
+            </div>
+            <h5 class="card-title">Cris Net Website</h5>
+            <p class="card-text">Website created for the company I currently work for, to replace the outdated website with a modern and responsive design.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://crisnet.netlify.app/" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/Cris-Net-Site" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  </body>
+      <!-- Pokedex Web -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/pokedex-web.png" class="project-img" alt="Pokedex Web">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">VueJs</span>
+              <span class="project-tag">CSS/Bootstrap</span>
+              <span class="project-tag">Web Development</span>
+            </div>
+            <h5 class="card-title">Pokedex Web</h5>
+            <p class="card-text">Website using PokeAPI to filter Pokémon from generations 1 to 5 with random filtering capability.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://pokedex-generatios.netlify.app" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/Pokedex-Web" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Finance Circles -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/finances-circle.png" class="project-img" alt="Finance Circles">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <h5 class="card-title">Finance Circles</h5>
+            <p class="card-text">Investment group management system linking groups to institutions and members to invest in registered products.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://financescirclesphp.000webhostapp.com/" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/FinanceCircles" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+            <!-- Curri Web -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/curri_web.png" class="project-img" alt="Curri Web">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">Bootstrap</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <h5 class="card-title">Curri Web</h5>
+            <p class="card-text">Application for creating online resumes with course information, training, and personal data, with PDF generation.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://curriweb.000webhostapp.com/" target="_blank" class="btn btn-sm btn-outline-primary" style="pointer-events: none; opacity: 0.6;">View Project</a>
+              <a href="https://github.com/LuisLessi/Curriculo-online" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pacote Office Website -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/officesite.png" class="project-img" alt="Pacote Office Website">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">Gamma</span>
+              <span class="project-tag">Web Development</span>
+            </div>
+            <h5 class="card-title">Pacote Office Website</h5>
+            <p class="card-text">Creation of 4 websites related to Office 365 tools (PowerBI, Excel, Word and PowerPoint) for Remington students.</p>
+            <div class="d-flex justify-content-between">
+              <div class="btn-group">
+                <a href="https://excel-master-01scsoj.gamma.site/" target="_blank" class="btn btn-sm btn-outline-primary">Excel</a>
+                <a href="https://power-bi-desktop-nkh3pgu.gamma.site/" target="_blank" class="btn btn-sm btn-outline-primary">PowerBI</a>
+                <a href="https://o-que-e-o-powerpoint-42mz32j.gamma.site/" target="_blank" class="btn btn-sm btn-outline-primary">PowerPoint</a>
+                <a href="https://microsoft-word-guide-9zkvmcx.gamma.site/" target="_blank" class="btn btn-sm btn-outline-primary">Word</a>
+              </div>
+              <a href="https://github.com/LuisLessi/Shauni_Dreadmaker" target="_blank" class="btn btn-sm btn-outline-secondary" style="pointer-events: none; opacity: 0.6;">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dreads da Shauní -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/dreadsShauni.png" class="project-img" alt="Dreads da Shauní">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">ReactJs</span>
+              <span class="project-tag">CSS/Bootstrap</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <h5 class="card-title">Dreads da Shauní</h5>
+            <p class="card-text">Portfolio site created for Carolina dreadmaker to present her already provided services.</p>
+            <div class="d-flex justify-content-between">
+              <a href="shauni-dreadmaker.netlify.app" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/Shauni_Dreadmaker" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Games 4 Dev -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/games4dev.png" class="project-img" alt="Games 4 Dev">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">Codeigniter 3</span>
+              <span class="project-tag">Bootstrap</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <h5 class="card-title">Games 4 Dev</h5>
+            <p class="card-text">Application created using CodeIgniter 3 that allows users to perform CRUD operations on games with user authentication.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://games-4-dev.000webhostapp.com/" target="_blank" class="btn btn-sm btn-outline-primary" style="pointer-events: none; opacity: 0.6;">View Project</a>
+              <a href="https://github.com/LuisLessi/Games-4-Dev" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shopping Store -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/shopping-store.png" class="project-img" alt="Shopping Store">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">Vue 3</span>
+              <span class="project-tag">HTML/CSS</span>
+              <span class="project-tag">Axios</span>
+              <span class="project-tag">Vuex</span>
+            </div>
+            <h5 class="card-title">Shopping Store</h5>
+            <p class="card-text">Small E-COMMERCE using the fakestore API with Vuex practices and API data manipulation.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://shopping-storeapi.netlify.app/" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/Shopping-Store" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CosmoShop Ecommerce -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/cosmoshop.png" class="project-img" alt="CosmoShop Ecommerce">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">JS/Jquery</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <h5 class="card-title">CosmoShop Ecommerce</h5>
+            <p class="card-text">Mini ecommerce project to test the features of the Laravel framework and using the PagSeguro API for card purchases.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://cosmoshoppecommerce.000webhostapp.com/public/" target="_blank" class="btn btn-sm btn-outline-primary" style="pointer-events: none; opacity: 0.6;">View Project</a>
+              <a href="https://github.com/LuisLessi/CosmoShop-Ecommerce" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Camargo Agronegocios -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/camargo-agronegocios.png" class="project-img" alt="Camargo Agronegocios">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">VueJs</span>
+              <span class="project-tag">CSS/Bootstrap</span>
+              <span class="project-tag">Express</span>
+            </div>
+            <h5 class="card-title">Camargo Agronegocios</h5>
+            <p class="card-text">Technical test using a Figma layout prototype for an agribusiness company website.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://camargo-agronegocios.netlify.app/" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/Camargo-Agronegocios" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vue Notes -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/notesApp_vueJs.png" class="project-img" alt="Vue Notes">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">Vue3</span>
+            </div>
+            <h5 class="card-title">Vue Notes</h5>
+            <p class="card-text">Notepad application created using Vue 3 composition API with creation date tracking.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://notes-app-vue.netlify.app/" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/Vue-Notes" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quiz App -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/quiz-app.png" class="project-img" alt="Quiz App">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">Vue3</span>
+              <span class="project-tag">CSS/Bootstrap</span>
+              <span class="project-tag">HTML</span>
+            </div>
+            <h5 class="card-title">Quiz App</h5>
+            <p class="card-text">Quiz system for API, Props and Router-Link study purposes with questions from Mathematics, Chemistry and Biology categories.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://quiz-vue3.netlify.app/#/" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/Quiz-App" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leilões Start -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/leiloes_start.png" class="project-img" alt="Leilões Start">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">VueJs</span>
+              <span class="project-tag">CSS/Bootstrap</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Firebase</span>
+            </div>
+            <h5 class="card-title">Leilões Start</h5>
+            <p class="card-text">Auction site with login authorization, live auctions, scheduled auctions and scheduling of new auctions for business users.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://leiloes-start.herokuapp.com/" target="_blank" class="btn btn-sm btn-outline-primary" style="pointer-events: none; opacity: 0.6;">View Project</a>
+              <a href="https://github.com/LuisLessi/Site-Leilao" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard API -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/dashboard_api.png" class="project-img" alt="Dashboard API">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">VUE 3</span>
+              <span class="project-tag">SCSS/Bootstrap</span>
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">Postman</span>
+            </div>
+            <h5 class="card-title">Dashboard API</h5>
+            <p class="card-text">Dashboard app using Vue 3 with axios, communicating with a Laravel server on the backend for REST API study.</p>
+            <div class="d-flex justify-content-between">
+              <a href="dashboard-api.netlify.app" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/Dashbord-API" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Networking -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/perfilEstudante.jpg" class="project-img" alt="Social Networking">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS/Bootstrap</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">NodeJs</span>
+              <span class="project-tag">VueJS/NuxtJS</span>
+              <span class="project-tag">Postman</span>
+            </div>
+            <h5 class="card-title">Social Networking</h5>
+            <p class="card-text">Social network similar to LinkedIn's role in uniting students and companies in one place.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://social-networking-project.netlify.app" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/Social-Networking-2.0-NuxtJs-" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meet Quasar -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/meet-quasar.png" class="project-img" alt="Meet Quasar">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">SCSS/Bootstrap</span>
+              <span class="project-tag">Vue</span>
+              <span class="project-tag">Quasar</span>
+            </div>
+            <h5 class="card-title">Meet Quasar</h5>
+            <p class="card-text">Recreation of the home screen of the Google Meet website using the Quasar framework for study purposes.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://meet-quasar.netlify.app/#/" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/Meet-Quasar" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nubank Quasar -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/nubank-quasar.png" class="project-img" alt="Nubank Quasar">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">SCSS/Bootstrap</span>
+              <span class="project-tag">Vue</span>
+              <span class="project-tag">Quasar</span>
+            </div>
+            <h5 class="card-title">Nubank Quasar</h5>
+            <p class="card-text">Recreation of the mobile interface of the Nubank app using the Quasar library as a tool study.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://nubank-vue-quasar.netlify.app/#/" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/Nubank-Quasar" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day Notes -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/Day_Notes.jpg" class="project-img" alt="Day Notes">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">ReactJs</span>
+              <span class="project-tag">NodeJs</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">MongoDB</span>
+              <span class="project-tag">Postman</span>
+            </div>
+            <h5 class="card-title">Day Notes</h5>
+            <p class="card-text">Notepad/card project with priority definition and filtering using NodeJs and ReactJs.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://day-note-project.netlify.app/" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/Day-Notes" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Busca Dev -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/bsucadev.png" class="project-img" alt="Busca Dev">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS/Bootstrap</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">VueJS/NuxtJS</span>
+            </div>
+            <h5 class="card-title">Busca Dev</h5>
+            <p class="card-text">Personal project with an idea similar to "GeekHunter" for connecting developers with opportunities.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://busca-dev.netlify.app" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+              <a href="https://github.com/LuisLessi/Busca-Dev" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog stacks -->
+      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="imgs/blog_stacks.png" class="project-img" alt="Blog stacks">
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">Handlebars</span>
+              <span class="project-tag">CSS/Bootstrap</span>
+              <span class="project-tag">NodeJs</span>
+              <span class="project-tag">MongoDB/MySQL</span>
+            </div>
+            <h5 class="card-title">Blog stacks</h5>
+            <p class="card-text">Blog which gathers posts published by users separated by categories with admin controls.</p>
+            <div class="d-flex justify-content-between">
+              <a href="" target="_blank" class="btn btn-sm btn-outline-primary" style="pointer-events: none; opacity: 0.6;">View Project</a>
+              <a href="https://github.com/LuisLessi/Blog-App" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="text-center mt-5" data-aos="fade-up">
+      <button id="toggleOtherProjects" class="btn btn-primary">View Other Projects</button>
+    </div>
+  </div>
+</section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-5">
+    <div class="container py-5">
+      <h2 class="section-title center text-center mb-5" data-aos="fade-up">Professional Experience</h2>
+      
+      <div class="timeline">
+        <!-- Current Job -->
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Jun 2024 - Present</div>
+            <h4>Systems Analyst</h4>
+            <h5>Medilar Gestão em Saúde</h5>
+            <p>Working on system analysis and development projects with a focus on healthcare solutions.</p>
+          </div>
+        </div>
+        
+        <!-- Previous Jobs -->
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Jan 2024 - Jun 2024</div>
+            <h4>Technology Teacher</h4>
+            <h5>Remington Educação e Tecnologia</h5>
+            <p>Taught technology classes, focusing on data analysis tools and development.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Feb 2023 - Oct 2023</div>
+            <h4>Junior Front End Developer</h4>
+            <h5>Drive7 - 4mm Serviços em Tecnologia</h5>
+            <p>Development of web interfaces with focus on user experience and performance.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Dec 2022 - Apr 2023</div>
+            <h4>Infrastructure Technician</h4>
+            <h5>CRIS.NET</h5>
+            <p>Technical support and IT infrastructure maintenance.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Oct 2020 - Dec 2022</div>
+            <h4>Technical Support</h4>
+            <h5>Sistel Fibra</h5>
+            <p>Customer technical support and connectivity issue resolution.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container py-5">
+      <h2 class="section-title center text-center mb-5" data-aos="fade-up">Technical Skills</h2>
+      
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="skill-category">
+            <h4 class="mb-4"><i class="fa fa-database me-2 text-primary"></i> Data Technologies</h4>
+            
+            <div class="skill-item">
+              <div class="skill-name">Python (Pandas, Scikit-learn)</div>
+              <div class="skill-level">
+                <div class="skill-progress" data-width="90%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-name">SQL & Databases</div>
+              <div class="skill-level">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-name">Power BI & Visualization</div>
+              <div class="skill-level">
+                <div class="skill-progress" data-width="88%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-name">ETL/ELT & Pipelines</div>
+              <div class="skill-level">
+                <div class="skill-progress" data-width="82%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-name">DuckDB & Dbt</div>
+              <div class="skill-level">
+                <div class="skill-progress" data-width="75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-category">
+            <h4 class="mb-4"><i class="fa fa-code me-2 text-primary"></i> Development</h4>
+            
+            <div class="skill-item">
+              <div class="skill-name">JavaScript/Vue.js</div>
+              <div class="skill-level">
+                <div class="skill-progress" data-width="80%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-name">PHP/Laravel</div>
+              <div class="skill-level">
+                <div class="skill-progress" data-width="75%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-name">HTML/CSS/Bootstrap</div>
+              <div class="skill-level">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-name">React/Node.js</div>
+              <div class="skill-level">
+                <div class="skill-progress" data-width="70%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-category mt-5">
+            <h4 class="mb-4"><i class="fa fa-cogs me-2 text-primary"></i> Tools & DevOps</h4>
+            
+            <div class="skill-item">
+              <div class="skill-name">Git & Version Control</div>
+              <div class="skill-level">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-name">Docker</div>
+              <div class="skill-level">
+                <div class="skill-progress" data-width="70%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-name">Jira/Bitbucket</div>
+              <div class="skill-level">
+                <div class="skill-progress" data-width="75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qualifications Section -->
+  <section id="qualifications" class="py-5">
+    <div class="container py-5">
+      <h2 class="section-title center text-center mb-5" data-aos="fade-up">Academic Background</h2>
+      
+      <div class="row">
+        <div class="col-md-6 mb-4" data-aos="fade-up">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div class="bg-primary p-3 rounded-circle me-3">
+                  <i class="fa fa-graduation-cap text-white"></i>
+                </div>
+                <div>
+                  <h5 class="card-title mb-0">MBA in Big Data Engineering</h5>
+                  <p class="text-muted mb-0">Unyleya EAD (In Progress)</p>
+                </div>
+              </div>
+              <p class="card-text">Postgraduate studies focused on big data, data architecture and analytics.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div class="bg-primary p-3 rounded-circle me-3">
+                  <i class="fa fa-graduation-cap text-white"></i>
+                </div>
+                <div>
+                  <h5 class="card-title mb-0">MBA in Data Science and Big Data Analytics</h5>
+                  <p class="text-muted mb-0">Faculdade Metropolitana EAD (Completed)</p>
+                </div>
+              </div>
+              <p class="card-text">Specialization in data analysis, machine learning and big data analytics.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div class="bg-primary p-3 rounded-circle me-3">
+                  <i class="fa fa-graduation-cap text-white"></i>
+                </div>
+                <div>
+                  <h5 class="card-title mb-0">Systems Analysis and Development</h5>
+                  <p class="text-muted mb-0">Fatec Taquaritinga (Completed)</p>
+                </div>
+              </div>
+              <p class="card-text">Technological degree focused on software and systems development.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div class="bg-primary p-3 rounded-circle me-3">
+                  <i class="fa fa-graduation-cap text-white"></i>
+                </div>
+                <div>
+                  <h5 class="card-title mb-0">IT Technician</h5>
+                  <p class="text-muted mb-0">UNESP Jaboticabal (Completed)</p>
+                </div>
+              </div>
+              <p class="card-text">Technical training in IT with emphasis on hardware and software.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container py-5">
+      <h2 class="section-title center text-center mb-5" data-aos="fade-up">Contact</h2>
+      
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="contact-info">
+            <div class="contact-icon">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <h4>Email</h4>
+            <p>luisadsfatec@hotmail.com</p>
+            <a href="mailto:luisadsfatec@hotmail.com" class="btn btn-outline-primary">Send Email</a>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-info">
+            <div class="contact-icon">
+              <i class="fa fa-phone"></i>
+            </div>
+            <h4>Phone</h4>
+            <p>(16) 99792-9960</p>
+            <a href="//wa.me/5516997929960" target="_blank" class="btn btn-outline-primary">Send WhatsApp</a>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-info">
+            <div class="contact-icon">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <h4>Location</h4>
+            <p>Ribeirão Preto, SP</p>
+            <a href="https://share.google/VBnO40Rj4sTRz0PSR" target="_blank" class="btn btn-outline-primary">View on Map</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-5" data-aos="fade-up">
+        <p class="lead">I'm available for freelance opportunities and projects</p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="https://www.linkedin.com/in/lu%C3%ADs-felipe-lessi-silva-9496aa1a1/" target="_blank" class="btn btn-primary">
+            <i class="fa fa-linkedin me-2"></i> LinkedIn
+          </a>
+          <a href="https://github.com/LuisLessi" target="_blank" class="btn btn-dark">
+            <i class="fa fa-github me-2"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">© <span id="current-year"></span> Luís Felipe. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="//wa.me/5516997929960" target="_blank" class="text-white me-3">
+            <i class="fa fa-whatsapp fa-lg"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/lu%C3%ADs-felipe-lessi-silva-9496aa1a1/" target="_blank" class="text-white me-3">
+            <i class="fa fa-linkedin fa-lg"></i>
+          </a>
+          <a href="https://github.com/LuisLessi" target="_blank" class="text-white">
+            <i class="fa fa-github fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
 
 </html>
