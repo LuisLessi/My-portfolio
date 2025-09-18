@@ -292,18 +292,20 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 30px;
 }
 
-.data-badge {
-  display: inline-block;
-  background-color: var(--secondary);
-  color: white;
-  padding: 5px 15px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
+/* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .back-to-top.show {
+    bottom: 20px;
+  }
+  
+  /* Outros ajustes existentes para mobile */
   .timeline:before {
     left: 30px;
   }
@@ -338,7 +340,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 150px;
     height: 150px;
   }
-
 }
 
 .other-project {
