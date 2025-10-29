@@ -14,55 +14,81 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// View Other Projects functionality - Toggle
+// Project Filter functionality
 document.addEventListener('DOMContentLoaded', function() {
-  const toggleButton = document.getElementById('toggleOtherProjects');
-  const otherProjects = document.querySelectorAll('.other-project');
-  let otherProjectsVisible = false;
+  const filterButtons = document.querySelectorAll('.filter-btn');
   
-  if (toggleButton && otherProjects.length > 0) {
-    toggleButton.addEventListener('click', function() {
-      otherProjectsVisible = !otherProjectsVisible;
-      
-      if (otherProjectsVisible) {
-        // Mostrar outros projetos
-        otherProjects.forEach(project => {
-          project.style.display = 'block';
-        });
-        toggleButton.textContent = 'Hide Other Projects';
-        toggleButton.classList.remove('btn-primary');
-        toggleButton.classList.add('btn-outline-primary');
-        
-        // Adicionar indicador visual
-        otherProjects.forEach(project => {
-          const cardBody = project.querySelector('.card-body');
-          if (!cardBody.querySelector('.other-project-indicator')) {
-            const indicator = document.createElement('div');
-            indicator.className = 'other-project-indicator mb-2';
-            indicator.innerHTML = '<span class="badge bg-warning text-dark">Other Project</span>';
-            cardBody.insertBefore(indicator, cardBody.firstChild);
-          }
-        });
-      } else {
-        // Ocultar outros projetos
-        otherProjects.forEach(project => {
-          project.style.display = 'none';
-        });
-        toggleButton.textContent = 'View Other Projects';
-        toggleButton.classList.remove('btn-outline-primary');
-        toggleButton.classList.add('btn-primary');
-        
-        // Remover indicadores visuais
-        const indicators = document.querySelectorAll('.other-project-indicator');
-        indicators.forEach(indicator => {
-          indicator.remove();
-        });
-      }
-      
-      // Re-inicializar AOS para animar os novos elementos
-      AOS.refresh();
-    });
+  // Selecionar todos os projetos por categoria
+  const dataProjects = document.querySelectorAll('.data-project');
+  const fullstackProjects = document.querySelectorAll('.fullstack-project');
+  const frontendProjects = document.querySelectorAll('.frontend-project');
+  const allProjects = document.querySelectorAll('.data-project, .fullstack-project, .frontend-project');
+  
+  // Função auxiliar para mostrar projeto
+  function showProject(project) {
+    // Remove o atributo style completamente para usar o padrão do Bootstrap
+    project.removeAttribute('style');
   }
+  
+  // Função auxiliar para ocultar projeto
+  function hideProject(project) {
+    project.style.display = 'none';
+  }
+  
+  // Inicializar: Mostrar apenas projetos de Data por padrão
+  dataProjects.forEach(showProject);
+  fullstackProjects.forEach(hideProject);
+  frontendProjects.forEach(hideProject);
+  
+  // Ativar botão Data
+  const dataBtn = document.querySelector('[data-filter="data"]');
+  if (dataBtn) {
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    dataBtn.classList.add('active');
+  }
+  
+  // Função para filtrar projetos
+  function filterProjects(filterType) {
+    if (filterType === 'all') {
+      // Mostrar todos os projetos
+      allProjects.forEach(showProject);
+    } else if (filterType === 'data') {
+      // Mostrar apenas Data, ocultar outros
+      dataProjects.forEach(showProject);
+      fullstackProjects.forEach(hideProject);
+      frontendProjects.forEach(hideProject);
+    } else if (filterType === 'fullstack') {
+      // Mostrar apenas Full Stack
+      fullstackProjects.forEach(showProject);
+      dataProjects.forEach(hideProject);
+      frontendProjects.forEach(hideProject);
+    } else if (filterType === 'frontend') {
+      // Mostrar apenas Front-end
+      frontendProjects.forEach(showProject);
+      dataProjects.forEach(hideProject);
+      fullstackProjects.forEach(hideProject);
+    }
+    
+    // Re-inicializar AOS para animar os elementos
+    setTimeout(() => {
+      AOS.refresh();
+    }, 100);
+  }
+  
+  // Adicionar event listeners aos botões de filtro
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Remover active de todos os botões
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // Adicionar active ao botão clicado
+      this.classList.add('active');
+      
+      // Filtrar projetos
+      const filterValue = this.getAttribute('data-filter');
+      filterProjects(filterValue);
+    });
+  });
 });
 
 // Back to top button

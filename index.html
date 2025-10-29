@@ -78,10 +78,18 @@
   <div class="container py-5">
     <h2 class="section-title center text-center mb-5" data-aos="fade-up">Projects</h2>
     
+    <!-- Filter Buttons -->
+    <div class="project-filters text-center mb-5" data-aos="fade-up">
+      <button class="filter-btn" data-filter="all">All Projects <span class="badge bg-secondary ms-2" id="count-all">22</span></button>
+      <button class="filter-btn active" data-filter="data">📊 Data Projects <span class="badge bg-success ms-2" id="count-data">6</span></button>
+      <button class="filter-btn" data-filter="fullstack">🚀 Full Stack <span class="badge bg-warning text-dark ms-2" id="count-fullstack">8</span></button>
+      <button class="filter-btn" data-filter="frontend">💻 Front-end <span class="badge bg-info text-dark ms-2" id="count-frontend">8</span></button>
+    </div>
+    
     <div class="row g-4">
             <!-- Projetos de Dados (aparecem primeiro) -->
       <!-- Plataforma de Análise de Cupons Fiscais -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+      <div class="col-md-6 col-lg-4 data-project" data-aos="fade-up" data-aos-delay="50">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/cupons-fiscais.png" class="project-img" alt="Plataforma de Análise de Cupons Fiscais">
@@ -108,7 +116,7 @@
       </div>
       
       <!-- E-Commerce Data Pipeline -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-md-6 col-lg-4 data-project" data-aos="fade-up" data-aos-delay="100">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/E-Commerce_Data_Pipeline.png" class="project-img" alt="E-Commerce Data Pipeline">
@@ -134,7 +142,7 @@
       </div>
       
       <!-- ETL Pipeline - Cybersecurity -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+      <div class="col-md-6 col-lg-4 data-project" data-aos="fade-up" data-aos-delay="150">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/pipeline-ciberseugrança.png" class="project-img" alt="ETL Pipeline Cybersecurity">
@@ -160,7 +168,7 @@
       </div>
       
       <!-- Dashboard Financeiro -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-md-6 col-lg-4 data-project" data-aos="fade-up" data-aos-delay="200">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/dashboard_finan.jpg" class="project-img" alt="Financial Dashboard">
@@ -185,7 +193,7 @@
       </div>
       
       <!-- Monitoramento COVID-19 -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+      <div class="col-md-6 col-lg-4 data-project" data-aos="fade-up" data-aos-delay="250">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/covid.png" class="project-img" alt="COVID-19 Monitoring">
@@ -210,7 +218,7 @@
       </div>
       
       <!-- RPA Protheus -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+      <div class="col-md-6 col-lg-4 data-project" data-aos="fade-up" data-aos-delay="300">
         <div class="project-card">
           <div class="project-img-container">
             <picture>
@@ -241,7 +249,7 @@
       <!-- Adicione aqui os outros projetos de dados primeiro -->
       
       <!-- Projetos não relacionados a dados (inicialmente ocultos) -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 frontend-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/cris-net.png" class="project-img" alt="Cris Net Website">
@@ -251,6 +259,9 @@
               <span class="project-tag">VueJs</span>
               <span class="project-tag">CSS/Bootstrap</span>
               <span class="project-tag">Web Development</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-info text-dark">Front-end Web Project</span>
             </div>
             <h5 class="card-title">Cris Net Website</h5>
             <p class="card-text">Website created for the company I currently work for, to replace the outdated website with a modern and responsive design.</p>
@@ -263,7 +274,7 @@
       </div>
 
       <!-- Pokedex Web -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 frontend-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/pokedex-web.png" class="project-img" alt="Pokedex Web">
@@ -273,6 +284,9 @@
               <span class="project-tag">VueJs</span>
               <span class="project-tag">CSS/Bootstrap</span>
               <span class="project-tag">Web Development</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-info text-dark">Front-end Web Project</span>
             </div>
             <h5 class="card-title">Pokedex Web</h5>
             <p class="card-text">Website using PokeAPI to filter Pokémon from generations 1 to 5 with random filtering capability.</p>
@@ -285,7 +299,7 @@
       </div>
 
       <!-- Finance Circles -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 fullstack-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/finances-circle.png" class="project-img" alt="Finance Circles">
@@ -295,6 +309,9 @@
               <span class="project-tag">PHP</span>
               <span class="project-tag">Laravel</span>
               <span class="project-tag">MySQL</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-warning text-dark">Full Stack Project</span>
             </div>
             <h5 class="card-title">Finance Circles</h5>
             <p class="card-text">Investment group management system linking groups to institutions and members to invest in registered products.</p>
@@ -307,7 +324,7 @@
       </div>
 
             <!-- Curri Web -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 fullstack-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/curri_web.png" class="project-img" alt="Curri Web">
@@ -317,6 +334,9 @@
               <span class="project-tag">PHP</span>
               <span class="project-tag">Bootstrap</span>
               <span class="project-tag">MySQL</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-warning text-dark">Full Stack Project</span>
             </div>
             <h5 class="card-title">Curri Web</h5>
             <p class="card-text">Application for creating online resumes with course information, training, and personal data, with PDF generation.</p>
@@ -329,7 +349,7 @@
       </div>
 
       <!-- Pacote Office Website -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 frontend-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/officesite.png" class="project-img" alt="Pacote Office Website">
@@ -338,6 +358,9 @@
             <div class="project-tags">
               <span class="project-tag">Gamma</span>
               <span class="project-tag">Web Development</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-secondary">Web Development</span>
             </div>
             <h5 class="card-title">Pacote Office Website</h5>
             <p class="card-text">Creation of 4 websites related to Office 365 tools (PowerBI, Excel, Word and PowerPoint) for Remington students.</p>
@@ -355,7 +378,7 @@
       </div>
 
       <!-- Dreads da Shauní -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 frontend-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/dreadsShauni.png" class="project-img" alt="Dreads da Shauní">
@@ -365,6 +388,9 @@
               <span class="project-tag">ReactJs</span>
               <span class="project-tag">CSS/Bootstrap</span>
               <span class="project-tag">JavaScript</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-info text-dark">Front-end Web Project</span>
             </div>
             <h5 class="card-title">Dreads da Shauní</h5>
             <p class="card-text">Portfolio site created for Carolina dreadmaker to present her already provided services.</p>
@@ -377,7 +403,7 @@
       </div>
 
       <!-- Games 4 Dev -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 fullstack-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/games4dev.png" class="project-img" alt="Games 4 Dev">
@@ -388,6 +414,9 @@
               <span class="project-tag">Codeigniter 3</span>
               <span class="project-tag">Bootstrap</span>
               <span class="project-tag">MySQL</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-warning text-dark">Full Stack Project</span>
             </div>
             <h5 class="card-title">Games 4 Dev</h5>
             <p class="card-text">Application created using CodeIgniter 3 that allows users to perform CRUD operations on games with user authentication.</p>
@@ -400,7 +429,7 @@
       </div>
 
       <!-- Shopping Store -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 frontend-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/shopping-store.png" class="project-img" alt="Shopping Store">
@@ -411,6 +440,9 @@
               <span class="project-tag">HTML/CSS</span>
               <span class="project-tag">Axios</span>
               <span class="project-tag">Vuex</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-info text-dark">Front-end Web Project</span>
             </div>
             <h5 class="card-title">Shopping Store</h5>
             <p class="card-text">Small E-COMMERCE using the fakestore API with Vuex practices and API data manipulation.</p>
@@ -423,7 +455,7 @@
       </div>
 
       <!-- CosmoShop Ecommerce -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 fullstack-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/cosmoshop.png" class="project-img" alt="CosmoShop Ecommerce">
@@ -434,6 +466,9 @@
               <span class="project-tag">Laravel</span>
               <span class="project-tag">JS/Jquery</span>
               <span class="project-tag">MySQL</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-warning text-dark">Full Stack Project</span>
             </div>
             <h5 class="card-title">CosmoShop Ecommerce</h5>
             <p class="card-text">Mini ecommerce project to test the features of the Laravel framework and using the PagSeguro API for card purchases.</p>
@@ -446,7 +481,7 @@
       </div>
 
       <!-- Camargo Agronegocios -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 frontend-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/camargo-agronegocios.png" class="project-img" alt="Camargo Agronegocios">
@@ -456,6 +491,9 @@
               <span class="project-tag">VueJs</span>
               <span class="project-tag">CSS/Bootstrap</span>
               <span class="project-tag">Express</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-info text-dark">Front-end Web Project</span>
             </div>
             <h5 class="card-title">Camargo Agronegocios</h5>
             <p class="card-text">Technical test using a Figma layout prototype for an agribusiness company website.</p>
@@ -468,7 +506,7 @@
       </div>
 
       <!-- Vue Notes -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 frontend-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/notesApp_vueJs.png" class="project-img" alt="Vue Notes">
@@ -478,6 +516,9 @@
               <span class="project-tag">HTML</span>
               <span class="project-tag">CSS</span>
               <span class="project-tag">Vue3</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-info text-dark">Front-end Web Project</span>
             </div>
             <h5 class="card-title">Vue Notes</h5>
             <p class="card-text">Notepad application created using Vue 3 composition API with creation date tracking.</p>
@@ -490,7 +531,7 @@
       </div>
 
       <!-- Quiz App -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 frontend-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/quiz-app.png" class="project-img" alt="Quiz App">
@@ -500,6 +541,9 @@
               <span class="project-tag">Vue3</span>
               <span class="project-tag">CSS/Bootstrap</span>
               <span class="project-tag">HTML</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-info text-dark">Front-end Web Project</span>
             </div>
             <h5 class="card-title">Quiz App</h5>
             <p class="card-text">Quiz system for API, Props and Router-Link study purposes with questions from Mathematics, Chemistry and Biology categories.</p>
@@ -512,7 +556,7 @@
       </div>
 
       <!-- Leilões Start -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 fullstack-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/leiloes_start.png" class="project-img" alt="Leilões Start">
@@ -523,6 +567,9 @@
               <span class="project-tag">CSS/Bootstrap</span>
               <span class="project-tag">JavaScript</span>
               <span class="project-tag">Firebase</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-warning text-dark">Full Stack Project</span>
             </div>
             <h5 class="card-title">Leilões Start</h5>
             <p class="card-text">Auction site with login authorization, live auctions, scheduled auctions and scheduling of new auctions for business users.</p>
@@ -535,7 +582,7 @@
       </div>
 
       <!-- Dashboard API -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 fullstack-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/dashboard_api.png" class="project-img" alt="Dashboard API">
@@ -548,6 +595,9 @@
               <span class="project-tag">PHP</span>
               <span class="project-tag">Postman</span>
             </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-warning text-dark">Full Stack Project</span>
+            </div>
             <h5 class="card-title">Dashboard API</h5>
             <p class="card-text">Dashboard app using Vue 3 with axios, communicating with a Laravel server on the backend for REST API study.</p>
             <div class="d-flex justify-content-between">
@@ -559,7 +609,7 @@
       </div>
 
       <!-- Social Networking -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 fullstack-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/perfilEstudante.jpg" class="project-img" alt="Social Networking">
@@ -573,6 +623,9 @@
               <span class="project-tag">VueJS/NuxtJS</span>
               <span class="project-tag">Postman</span>
             </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-warning text-dark">Full Stack Project</span>
+            </div>
             <h5 class="card-title">Social Networking</h5>
             <p class="card-text">Social network similar to LinkedIn's role in uniting students and companies in one place.</p>
             <div class="d-flex justify-content-between">
@@ -584,7 +637,7 @@
       </div>
 
       <!-- Meet Quasar -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 frontend-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/meet-quasar.png" class="project-img" alt="Meet Quasar">
@@ -595,6 +648,9 @@
               <span class="project-tag">SCSS/Bootstrap</span>
               <span class="project-tag">Vue</span>
               <span class="project-tag">Quasar</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-info text-dark">Front-end Web Project</span>
             </div>
             <h5 class="card-title">Meet Quasar</h5>
             <p class="card-text">Recreation of the home screen of the Google Meet website using the Quasar framework for study purposes.</p>
@@ -607,7 +663,7 @@
       </div>
 
       <!-- Nubank Quasar -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 frontend-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/nubank-quasar.png" class="project-img" alt="Nubank Quasar">
@@ -618,6 +674,9 @@
               <span class="project-tag">SCSS/Bootstrap</span>
               <span class="project-tag">Vue</span>
               <span class="project-tag">Quasar</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-info text-dark">Front-end Web Project</span>
             </div>
             <h5 class="card-title">Nubank Quasar</h5>
             <p class="card-text">Recreation of the mobile interface of the Nubank app using the Quasar library as a tool study.</p>
@@ -630,7 +689,7 @@
       </div>
 
       <!-- Day Notes -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 fullstack-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/Day_Notes.jpg" class="project-img" alt="Day Notes">
@@ -644,6 +703,9 @@
               <span class="project-tag">MongoDB</span>
               <span class="project-tag">Postman</span>
             </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-warning text-dark">Full Stack Project</span>
+            </div>
             <h5 class="card-title">Day Notes</h5>
             <p class="card-text">Notepad/card project with priority definition and filtering using NodeJs and ReactJs.</p>
             <div class="d-flex justify-content-between">
@@ -655,7 +717,7 @@
       </div>
 
       <!-- Busca Dev -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 frontend-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/bsucadev.png" class="project-img" alt="Busca Dev">
@@ -666,6 +728,9 @@
               <span class="project-tag">CSS/Bootstrap</span>
               <span class="project-tag">JavaScript</span>
               <span class="project-tag">VueJS/NuxtJS</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-info text-dark">Front-end Web Project</span>
             </div>
             <h5 class="card-title">Busca Dev</h5>
             <p class="card-text">Personal project with an idea similar to "GeekHunter" for connecting developers with opportunities.</p>
@@ -678,7 +743,7 @@
       </div>
 
       <!-- Blog stacks -->
-      <div class="col-md-6 col-lg-4 other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
+      <div class="col-md-6 col-lg-4 fullstack-project other-project" style="display: none;" data-aos="fade-up" data-aos-delay="600">
         <div class="project-card">
           <div class="project-img-container">
             <img src="imgs/blog_stacks.png" class="project-img" alt="Blog stacks">
@@ -689,6 +754,9 @@
               <span class="project-tag">CSS/Bootstrap</span>
               <span class="project-tag">NodeJs</span>
               <span class="project-tag">MongoDB/MySQL</span>
+            </div>
+            <div class="other-project-indicator mb-2">
+              <span class="badge bg-warning text-dark">Full Stack Project</span>
             </div>
             <h5 class="card-title">Blog stacks</h5>
             <p class="card-text">Blog which gathers posts published by users separated by categories with admin controls.</p>
@@ -702,9 +770,6 @@
       
     </div>
     
-    <div class="text-center mt-5" data-aos="fade-up">
-      <button id="toggleOtherProjects" class="btn btn-primary">View Other Projects</button>
-    </div>
   </div>
 </section>
 
